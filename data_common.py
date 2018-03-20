@@ -377,14 +377,14 @@ def get_shuangtong_photos(diretory):
     results = {}
     base_human = r'{}{}human_test'.format(diretory, os.sep)
     base_paper = r'{}{}paper'.format(diretory, os.sep)
-    base_noface = r'{}{}rotate'.format(diretory, os.sep)
+    base_noface = r'{}{}noface'.format(diretory, os.sep)
     
     human_photos = get_filename(glob.glob('{}{}*.*'.format(base_human,os.sep)))
     human_photos = get_filename(human_photos)
     paper_photos = get_filename(glob.glob('{}{}*.*'.format(base_paper,os.sep)))
     paper_photos = get_filename(paper_photos)
-    noface_photos = get_filename(glob.glob('{}{}*.*'.format(base_paper,os.sep)))
-    noface_photos = get_filename(paper_photos)    
+    noface_photos = get_filename(glob.glob('{}{}*.*'.format(base_noface,os.sep)))
+    noface_photos = get_filename(noface_photos)    
     results['human_test'] = human_photos
     results['paper'] = paper_photos
     results['noface'] = noface_photos
@@ -408,9 +408,12 @@ def get_bj_results(filename,return_dict=False):
     
 def rename_shuangtong(name):
     names = name.split('/')
-    filename = "{}{}/{}".format(
-    "20180228_双通人脸检测_zhourong/Image/33941/双通活体检测全集数据/",
-    names[-2],names[-1])
+    if 'noface' in name:
+        filename = "{}/{}".format(names[-2],names[-1])      
+    else:
+        filename = "{}{}/{}".format(
+            "20180228_双通人脸检测_zhourong/Image/33941/双通活体检测全集数据/",
+            names[-2],names[-1])
     return filename    
     
 def get_sz_shuangtong_results(
@@ -433,7 +436,7 @@ def get_sz_shuangtong_results(
             if os.path.basename(name) in shuangtong_photos['noface']:
                 if result != '未检测到人脸':
                     detection_result = "{0}\n".format(name)                
-                    detection_results = detection_results +  detection_result   
+                    #detection_results = detection_results +  detection_result   
                 else:
                     print("Error: Find face in {}".format(os.path.basename(name)))
                 
@@ -448,7 +451,7 @@ def get_sz_shuangtong_results(
                     detection_results = detection_results +  detection_result
                 else:
                     detection_result = "{0}\n".format(name)                
-                    detection_results = detection_results +  detection_result
+                    #detection_results = detection_results +  detection_result
              
         f = open(out_filename, 'wb')
         f.write(detection_results.encode(encoding='utf_8', errors='strict'))
@@ -468,8 +471,10 @@ def get_result_filelist(directoy):
         if "双通" in str(filename):         
             if "paper" in str(filename):           
                 xls_files[version]['paper'] = str(filename)
-            else:
+            elif "human" in str(filename):
                 xls_files[version]['human_test'] = str(filename)
+            else:
+                xls_files[version]['noface'] = str(filename)
         else:
             xls_files[version]['tongyong'] = str(filename)
     return xls_files
