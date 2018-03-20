@@ -33,13 +33,14 @@ def find_address(url, keys):
 def find_addresses(url, keys):
     result = requests.get(url)
     page_num = re.search(r'/\s+(\d+)\s+Pages', result.text)
+    urls =[url,]
     if page_num:
         page_num = int(page_num.group(1))
-    urls =[url,]
-    # http://www.allitebooks.com/?s=testing
-    # http://www.allitebooks.com/page/2/?s=testing
-    for i in range(2, page_num + 1):
-        urls.append(url.replace('?', '/page/{}/?'.format(i)))
+   
+        # http://www.allitebooks.com/?s=testing
+        # http://www.allitebooks.com/page/2/?s=testing
+        for i in range(2, page_num + 1):
+            urls.append(url.replace('?', '/page/{}/?'.format(i)))
         
     addresses = []
     for address in urls:
@@ -82,17 +83,18 @@ for file_link in valids:
     
     name = '-{}.'.format(year).join(link.split('/')[-1].split('.'))
     filename = "{}{}{}".format(options.o, os.sep, name) if options.o else name
-    print(filename)
-    actuals.append("[{0}]({1})".format(name, link))
+    print(filename)	
+    url = link.replace(" ","%20")
+    actuals.append("* [{0}]({1})".format(name, url))
     
     if options.d:
-        r = requests.get(link, stream=True)
+        r = requests.get(url, stream=True)
         if r.status_code == 200:
             with open(filename, 'wb') as f:
                 r.raw.decode_content = True
                 shutil.copyfileobj(r.raw, f)  
         else:
-            print("Failed to download {}".format(link))
+            print("Failed to download {}".format(url))
                 
 for item in actuals:
     print(item)
