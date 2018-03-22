@@ -1,8 +1,13 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
-#
+# Author:    xurongzhong#126.com wechat:pythontesting qq:37391319
+# CreateDate: 2018-1-8
+# check_md5.py
+
 import multiprocessing
 from pathlib import Path
+import argparse
+import os
 
 import data_common
 
@@ -12,7 +17,7 @@ def consumer(queue, results, lock):
         if item is None:
             break        
         name = os.path.basename(item)
-        md5 = data.common.get_md5(item, is_file=True)
+        md5 = data_common.get_md5(item, is_file=True)
         
         with lock:
             if md5 in results:
@@ -23,6 +28,14 @@ def consumer(queue, results, lock):
 
 
 if __name__ == '__main__':
+    
+    parser = argparse.ArgumentParser()
+    parser.add_argument('directory', action="store", help=u'目录')
+    parser.add_argument('-t', action="store", dest="typename",
+                        default="*", help=u'文件扩展名')
+    parser.add_argument('--version', action='version',
+                        version='%(prog)s 1.1 Rongzhong xu 2018 03 22')
+    options = parser.parse_args()
     
     process = []
     queue = multiprocessing.Queue()
@@ -43,20 +56,17 @@ if __name__ == '__main__':
     for i in range(number):
         process[i].start()
     
-    src = r'/home/andrew/test'
-    p = Path(src)   
-    for item  in p.glob('**/*.jpg'):
+    p = Path(options.directory)   
+    for item  in p.glob('**/*.{}'.format(options.typename)):
         queue.put(str(item))
         
-    for i in range(number + 1):
+    for i in range(number):
         queue.put(None) 
         
     for i in range(number):
-        process[i].join()
-        
+        process[i].join()       
        
     f = open("md5_files.txt",'w')    
     for item in dict(results):
         if len(results[item]) > 1:
             f.write("{},{}\n".format(item,results[item]))
-        
