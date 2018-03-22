@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
-# Author:    xurongzhong#126.com wechat:pythontesting qq:37391319
-# CreateDate: 2018-1-8
+# Author:    xurongzhong#126.com 技术支持qq群：144081101
+# CreateDate: 2018-1-8 
 # check_md5.py
 
 import multiprocessing

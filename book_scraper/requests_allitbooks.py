@@ -74,8 +74,14 @@ print(valids)
 actuals = []
 for file_link in valids:
     result = requests.get(file_link)
-    year = re.search(r'Year.*?(\d+)<', result.text).group(1)
-    link = re.search('ref="(.*?)" target="_blank"', result.text).group(1)
+    year_search = re.search(r'Year.*?(\d+)<', result.text)
+    year = year_search.group(1) if year_search else '1900'
+    link_search = re.search('ref="(.*?)" target="_blank"', result.text)
+    if not link_search:
+        print("Can not find link in {}".format(file_link))
+        continue
+    else:
+        link = link_search.group(1)
     print(year, link)
     if int(year) < int(options.year):
         print("skip old files!")

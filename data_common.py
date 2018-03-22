@@ -433,25 +433,25 @@ def get_sz_shuangtong_results(
             name = row['图片的路径']
             result = row['测试结果']
             # left, top, right,  bottom
-            if os.path.basename(name) in shuangtong_photos['noface']:
-                if result != '未检测到人脸':
-                    detection_result = "{0}\n".format(name)                
-                    #detection_results = detection_results +  detection_result   
-                else:
-                    print("Error: Find face in {}".format(os.path.basename(name)))
+            #if os.path.basename(name) in shuangtong_photos['noface']:
+                #if result != '未检测到人脸':
+                    #detection_result = "{0}\n".format(name)                
+                    ##detection_results = detection_results +  detection_result   
+                #else:
+                    #print("Error: Find face in {}".format(os.path.basename(name)))
                 
+            #else:
+            if result != '未检测到人脸':
+                sore = float(result.split(':')[-1].strip())
+                temps = result.split('[')
+                left, top = temps[1].strip(']').split(',')
+                right,  bottom = temps[2].split(']')[0].split(',')  
+                detection_result = "{0} {1} {2} {3} {4} 1 {5} \n".format(
+                name,left, top, int(right) - int(left),  int(bottom) - int(top), sore)
+                detection_results = detection_results +  detection_result
             else:
-                if result != '未检测到人脸':
-                    sore = float(result.split(':')[-1].strip())
-                    temps = result.split('[')
-                    left, top = temps[1].strip(']').split(',')
-                    right,  bottom = temps[2].split(']')[0].split(',')  
-                    detection_result = "{0} {1} {2} {3} {4} 1 {5} \n".format(
-                    name,left, top, int(right) - int(left),  int(bottom) - int(top), sore)
-                    detection_results = detection_results +  detection_result
-                else:
-                    detection_result = "{0}\n".format(name)                
-                    #detection_results = detection_results +  detection_result
+                detection_result = "{0}\n".format(name)                
+                #detection_results = detection_results +  detection_result
              
         f = open(out_filename, 'wb')
         f.write(detection_results.encode(encoding='utf_8', errors='strict'))
