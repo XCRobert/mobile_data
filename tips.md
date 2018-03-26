@@ -4,7 +4,7 @@ https://github.com/github/gitignore/blob/master/Python.gitignore
 
 ## save git password
 
-git config --global credential.helper cache
+ git config credential.helper store
 
 ## Easy TOC creation for GitHub README.md 
 

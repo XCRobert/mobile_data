@@ -9,3 +9,4 @@ from PIL import Image
 im = Image.open("demo.jpg")
 print(im.format, im.size, im.mode)
 im.show()
+im.save("demo.png")
