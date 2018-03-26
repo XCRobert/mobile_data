@@ -409,7 +409,7 @@ def get_bj_results(filename,return_dict=False):
 def rename_shuangtong(name):
     names = name.split('/')
     if 'noface' in name:
-        filename = "{}/{}".format(names[-2],names[-1])      
+        filename = "double/{}/{}".format(names[-2],names[-1])      
     else:
         filename = "{}{}/{}".format(
             "20180228_双通人脸检测_zhourong/Image/33941/双通活体检测全集数据/",
@@ -420,10 +420,14 @@ def get_sz_shuangtong_results(
     filenames,shuangtong_photos, output_file=False,
     out_filename="/home/andrew/code/detection_results.txt"):
     
-    df_paper = pandas.read_excel(filenames['paper'],usecols=[0,6]) 
-    df_human = pandas.read_excel(filenames['human_test'],usecols=[0,6]) 
+    print(filenames)
+    cols = [0,3,6]
+    df_paper = pandas.read_excel(filenames['paper'],usecols=cols) 
+    df_human = pandas.read_excel(filenames['human_test'],usecols=cols) 
+    #df_noface = pandas.read_excel(filenames['noface'],usecols=cols) 
     df = pandas.concat([df_paper, df_human])
-    df['图片的路径'] = df['图片的路径'].apply(rename_shuangtong)   
+    df['图片的路径'] = df['图片的路径'].apply(rename_shuangtong)
+    print(df["人脸检测时间"].mean())
     
     if output_file:
         # 生成北京需要的测试结果        

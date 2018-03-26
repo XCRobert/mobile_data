@@ -6,4 +6,8 @@ https://github.com/github/gitignore/blob/master/Python.gitignore
 
 git config --global credential.helper cache
 
-##
+## Easy TOC creation for GitHub README.md 
+
+https://github.com/ekalinin/github-markdown-toc
+
+/home/andrew/code/gh-md-toc   ~/code/mobile_data/books.md
