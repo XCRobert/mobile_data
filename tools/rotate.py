@@ -8,8 +8,8 @@ import os
 
 from photos import rotate
 
-src = r'/home/andrew/code/mobile_data/tools/1'
-dst = r'/home/andrew/code/mobile_data/tools/True'
+src = r'/home/andrew/code/tmp_photos'
+dst = r'/home/andrew/code/tmp_photos2'
 
 common = glob.glob('{}{}*.*'.format(src, os.sep))  
 rotate(common, dst)

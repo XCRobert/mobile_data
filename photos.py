@@ -55,9 +55,16 @@ def rotateImage(image, angle):
     result = cv2.warpAffine(image, rot_mat, image.shape[1::-1], flags=cv2.INTER_LINEAR)
     return result
 
+def rotate(files, dst, value=90):
+    for file_ in files:
+        img = Image.open(file_)
+        img = img.rotate(value)
+        name = "{}{}{}".format(dst, os.sep, os.path.basename(file_))
+        img.save(name)
+        
 def rotate2(files, dst, value=90):
     for file_ in files:
         img = cv2.imread(file_,0)
         result = rotateImage(img, value)
         cv2.imwrite("{}{}{}".format(dst, os.sep, os.path.basename(file_)), 
-result) 
+                    result) 
