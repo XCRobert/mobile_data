@@ -24,4 +24,4 @@ def roll(image, delta):
 
 im = Image.open("demo.jpg")
 im = roll(im,100)
-im.show()
+im.show()	

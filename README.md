@@ -10,6 +10,90 @@ wingide6 破解：other/wingide6_python3_crack.py
 
 [python、软件测试等海量书籍](books.md)
 
+Table of Contents
+=================
+
+   * [Python测试开发库](#python测试开发库)
+      * [参考资料](#参考资料)
+   * [测试开发](#测试开发)
+      * [Web UI测试自动化](#web-ui测试自动化)
+      * [移动测试自动化](#移动测试自动化)
+      * [Windows UI测试自动化](#windows-ui测试自动化)
+      * [UI测试](#ui测试)
+      * [性能测试](#性能测试)
+      * [测试框架](#测试框架)
+      * [Mock](#mock)
+      * [其他测试工具](#其他测试工具)
+      * [持续交付](#持续交付)
+      * [测试工具对接](#测试工具对接)
+   * [awesome-python](#awesome-python)
+      * [管理面板(Admin Panels)](#管理面板admin-panels)
+      * [算法和设计模式(Algorithms and Design Patterns)](#算法和设计模式algorithms-and-design-patterns)
+      * [反病毒(Anti-spam)](#反病毒anti-spam)
+      * [资产管理(Asset Management)](#资产管理asset-management)
+      * [音频(Audio)](#音频audio)
+      * [认证(Authentication)](#认证authentication)
+      * [内置类增强(Built-in Classes Enhancement)](#内置类增强built-in-classes-enhancement)
+      * [CMS(Content Management Systems)](#cmscontent-management-systems)
+      * [缓存(Caching)](#缓存caching)
+      * [自动聊天工具(ChatOps Tools)](#自动聊天工具chatops-tools)
+      * [代码分析和lint(Code Analysis)](#代码分析和lintcode-analysis)
+      * [命令行工具(Command-line Tools)](#命令行工具command-line-tools)
+         * [命令行程序开发( Command-line Application Development)](#命令行程序开发-command-line-application-development)
+         * [生产力工具(Productivity Tools)](#生产力工具productivity-tools)
+      * [兼容性(Compatibility)](#兼容性compatibility)
+      * [计算机视觉(Computer Vision)](#计算机视觉computer-vision)
+      * [并发和并行及异步与网络(Concurrency and Parallelism)](#并发和并行及异步与网络concurrency-and-parallelism)
+      * [配置(Configuration)](#配置configuration)
+      * [加密(Cryptography)](#加密cryptography)
+      * [数据分析(Data Analysis)](#数据分析data-analysis)
+      * [数据验证(Data Validation)](#数据验证data-validation)
+      * [数据可视化(Data Visualization)](#数据可视化data-visualization)
+      * [数据库(Database)](#数据库database)
+      * [数据库驱动(Database Drivers)](#数据库驱动database-drivers)
+      * [日期和时间（Date and Time）](#日期和时间date-and-time)
+      * [调试工具(Debugging Tools)](#调试工具debugging-tools)
+      * [Deep Learning](#deep-learning)
+      * [图形用户界面(GUI)](#图形用户界面gui)
+         * [关系型数据库](#关系型数据库)
+         * [NoSQL 数据库](#nosql-数据库)
+         * [其他](#其他)
+      * [包管理](#包管理)
+      * [包仓库](#包仓库)
+      * [分发](#分发)
+      * [文档(Documentation)](#文档documentation)
+      * [下载器(Downloader)](#下载器downloader)
+      * [电子商务(E-commerce)](#电子商务e-commerce)
+      * [编辑器插件(Editor Plugins and IDEs)](#编辑器插件editor-plugins-and-ides)
+      * [电子邮件(Email)](#电子邮件email)
+      * [环境管理(Environment Management)](#环境管理environment-management)
+      * [文件(Files)](#文件files)
+      * [包管理(Package Management)](#包管理package-management)
+      * [外部函数接口（Foreign Function Interface）](#外部函数接口foreign-function-interface)
+      * [表单（Forms）](#表单forms)
+      * [函数式编程（Functional Programming）](#函数式编程functional-programming)
+      * [特殊文本格式处理](#特殊文本格式处理)
+         * [通用](#通用)
+         * [Office](#office)
+         * [PDF](#pdf)
+         * [Markdown](#markdown)
+         * [YAML](#yaml)
+         * [CSV](#csv)
+      * [文本处理](#文本处理)
+         * [通用](#通用-1)
+         * [Slugify](#slugify)
+         * [解析器](#解析器)
+      * [第三方 API](#第三方-api)
+      * [URL处理](#url处理)
+      * [Video](#video)
+      * [WSGI 服务器](#wsgi-服务器)
+      * [网页内容提取](#网页内容提取)
+      * [网络爬虫](#网络爬虫)
+      * [Web 框架](#web-框架)
+      * [WebSocket](#websocket)
+         * [持续更新](#持续更新)
+		 
+
 
 # Python测试开发库
 
@@ -229,9 +313,8 @@ radar 因为github星级太少而未收录
 
 # awesome-python
 
-## 管理面板
+## 管理面板(Admin Panels)
 
-用于管理界面的库。
 
  * Ajenti - Linux & BSD web管理面板。管理进程和文件等。 [链接](https://github.com/ajenti/ajenti) 
 
@@ -248,7 +331,7 @@ radar 因为github星级太少而未收录
 
  * Wooey - 为Python脚本创建自动Web UI的Django应用程序。 [链接](https://github.com/wooey/wooey) 
 
-## 算法和设计模式
+## 算法和设计模式(Algorithms and Design Patterns)
 
 Python的算法和设计模式的实现。
 
@@ -262,7 +345,7 @@ Python的算法和设计模式的实现。
 
 
 
-## 反病毒
+## 反病毒(Anti-spam)
 
  * django-simple-captcha - 简单且高度可定制的Django应用，可以将验证码图像添加到任何Django表单。 [链接](https://github.com/mbi/django-simple-captcha) 
 
@@ -271,7 +354,7 @@ Python的算法和设计模式的实现。
 django-simple-spam-blocker因为github星级太少而未收录
 
 
-## 资产管理
+## 资产管理(Asset Management)
 
 用于管理，压缩和缩小网站资产的工具。
 
@@ -293,7 +376,7 @@ django-simple-spam-blocker因为github星级太少而未收录
 
 
 
-## 音频
+## 音频(Audio)
 
 操作音频的库。
 
@@ -331,7 +414,7 @@ django-elastic-transcoder， eyeD3 因为github星级太少而未收录
 
 scikits.talkbox 因长时间未更新未收录
 
-## 认证
+## 认证(Authentication)
 
  * Authomatic：简单但是强大的框架，身份验证/授权客户端。[链接](https://github.com/authomatic/authomatic) 
 
@@ -364,7 +447,13 @@ jose，python-jws因为github星级太少而未收录
 
 scikits.talkbox 因长时间未更新未收录
 
-## CMS
+## 内置类增强(Built-in Classes Enhancement)
+
+* [attrs](https://github.com/python-attrs/attrs) - 替换类定义中的__init__，__eq__，__repr__等样板文件。
+* [bidict](https://github.com/jab/bidict) - 高效的双向字典。
+* [Box](https://github.com/cdgriffith/Box) - 点符号访问的Python字典
+
+## CMS(Content Management Systems)
 
 内容管理系统
 
@@ -390,7 +479,7 @@ scikits.talkbox 因长时间未更新未收录
 
 
 
-## 缓存
+## 缓存(Caching)
 
 缓存数据的库。
 
@@ -414,12 +503,12 @@ scikits.talkbox 因长时间未更新未收录
 
 django-viewlet因为github星级太少而未收录
 
-## 自动聊天工具
+## 自动聊天工具(ChatOps Tools)
 
  * Errbot：最简单和最流行的聊天机器人用来实现自动聊天工具。[链接](https://github.com/errbotio/errbot/) 
 
 
-## 代码分析和lint
+## 代码分析和lint(Code Analysis)
 
  * coala：语言独立和易于扩展的代码分析应用程序。[链接](https://pypi.python.org/pypi/coala/0.12.0.dev20171216122902) 
 
@@ -445,9 +534,9 @@ django-viewlet因为github星级太少而未收录
 
  * prospector - 分析Python代码并输出有关错误，潜在问题，违反常规和复杂性的信息的工具。[链接](https://github.com/landscapeio/prospector)
 
-## 命令行工具。
+## 命令行工具(Command-line Tools)
 
-### 命令行程序开发
+### 命令行程序开发( Command-line Application Development)
 
  * asciimatics：跨平台，全屏终端包（即鼠标/键盘输入和彩色，定位文本输出），完整的复杂动画和特殊效果的高级API。[链接](https://github.com/peterbrittain/asciimatics) 
 
@@ -471,7 +560,7 @@ django-viewlet因为github星级太少而未收录
 
  * Pythonpy：在命令行中直接执行任何Python指令。[链接](https://github.com/Russell91/pythonpy) 
 
-### 生产力工具
+### 生产力工具(Productivity Tools)
 
  * aws-cli：Amazon Web Services 的通用命令行界面。[链接](https://github.com/aws/aws-cli) 
 
@@ -501,7 +590,7 @@ django-viewlet因为github星级太少而未收录
 
  * try：很简单的命令行工具，用来试用python库。[链接](https://github.com/timofurrer/try) 
 
-## 兼容性
+## 兼容性(Compatibility)
 
 帮助从 Python 2 向 Python 3迁移的库。
 
@@ -511,7 +600,7 @@ django-viewlet因为github星级太少而未收录
 
  * Six：Python 2 和 3 的兼容性工具。[链接](https://github.com/benjaminp/six) 
 
-## 计算机视觉
+## 计算机视觉(Computer Vision)
 
 计算机视觉库。
 
@@ -523,7 +612,7 @@ django-viewlet因为github星级太少而未收录
 
  * SimpleCV：一个用来创建计算机视觉应用的开源框架。[链接](https://github.com/sightmachine/SimpleCV) 
 
-## 并发和并行及异步与网络
+## 并发和并行及异步与网络(Concurrency and Parallelism)
 
 用以进行并发和并行操作的库。
 
@@ -561,7 +650,7 @@ django-viewlet因为github星级太少而未收录
 
  * txZMQ - 基于 Twisted 的 ZeroMQ 消息库的 Python 封装。[链接](https://github.com/smira/txZMQ)
 
-## 配置
+## 配置(Configuration)
 
 用来保存和解析配置的库。
 
@@ -576,7 +665,7 @@ django-viewlet因为github星级太少而未收录
  * python-decouple：将设置和代码完全隔离。[链接](https://github.com/henriquebastos/python-decouple)
 
 
-## 加密
+## 加密(Cryptography)
 
  * cryptography：这个软件包意在提供密码学基本内容和方法提供给 Python 开发者。[链接](https://github.com/pyca/cryptography/blob/master/docs/index.rst)
 
@@ -590,7 +679,7 @@ django-viewlet因为github星级太少而未收录
 
  * PyNacl：网络和密码学(NaCl) 库的 Python 绑定。[链接](https://github.com/pyca/pynacl)
 
-## 数据分析
+## 数据分析(Data Analysis)
 
  * blaze：NumPy 和 Pandas 的大数据接口。[链接](https://github.com/blaze/blaze)
 
@@ -598,13 +687,11 @@ django-viewlet因为github星级太少而未收录
 
  * orange：通过可视化编程或 Python 脚本进行数据挖掘，数据可视化，分析和机器学习。[链接](https://github.com/biolab/orange3)
 
- * Pandas：提供高性能，易用的数据结构和数据分析工具。[链接](https://github.com/pandas-dev/pandas) --推荐
-
- * 书籍：利用Python进行数据分析 2017 第二版 中文 [链接](https://github.com/pandas-dev/pandas) --推荐
+ * Pandas：提供高性能，易用的数据结构和数据分析工具。[链接](https://github.com/pandas-dev/pandas) --强烈推荐
 
  * 书籍：利用Python进行数据分析 2017 第二版 代码 [链接](https://github.com/wesm/pydata-book)  --推荐
 
-## 数据验证
+## 数据验证(Data Validation)
 
 数据验证库。多用于表单验证。
 
@@ -625,7 +712,7 @@ django-viewlet因为github星级太少而未收录
 
  * voluptuous：Python 数据验证库。主要是为了验证传入 Python的 JSON，YAML 等数据。[链接](https://github.com/alecthomas/voluptuous)
 
-## 数据可视化
+## 数据可视化(Data Visualization)
 
 进行数据可视化的库。 参见: [awesome-javascript](https://github.com/sorrycc/awesome-javascript#data-visualization)。
 
@@ -733,7 +820,7 @@ Python实现的数据库。
   * when.py：人性化的datetime。[链接](https://github.com/dirn/When.py) 
 
 
-## 调试工具
+## 调试工具(Debugging Tools)
 
 代码调试的库。
 
@@ -766,7 +853,28 @@ Python实现的数据库。
 
   * python-statsd：statsd 服务器的 Python 客户端。[链接]() 
 
-  * 
+## Deep Learning
+
+机器学习库。 参见:[awesome-deep-learning](https://github.com/ChristosChristofidis/awesome-deep-learning).*
+
+* [Caffe](https://github.com/BVLC/caffe) - 快速开放的深度学习框架 --推荐
+* [Keras](https://github.com/fchollet/keras) - 高级神经网络库，能够在TensorFlow或Theano之上运行。 --推荐
+* [MXNet](https://github.com/dmlc/mxnet) - 高效率和灵活的深度学习框架。
+* [Neupy](http://neupy.com/pages/home.html) - 运行和测试不同的人工神经网络算法.
+* [Pytorch](http://pytorch.org/) - Python中的张量和动态神经网络，具有强大的GPU加速功能。 --推荐
+* [Serpent.AI](https://github.com/SerpentAI/SerpentAI) - 游戏代理框架。 使用任何视频游戏作为深度学习沙盒。 --推荐
+* [TensorFlow](https://github.com/tensorflow/tensorflow) - 由Google创建的最受欢迎的深度学习框架。 --强烈推荐
+* [Theano](https://github.com/Theano/Theano) - 用于快速数值计算的库.  --推荐
+  
+  
+Caffe - 一个快速开放的深度学习框架..
+     Keras - 高级神经网络库，能够在TensorFlow或Theano之上运行。
+     MXNet - 为提高效率和灵活性而设计的深度学习框架。
+     Neupy - 运行和测试不同的人工神经网络算法。
+     Pytorch - Python中的张量和动态神经网络，具有强大的GPU加速功能。
+     Serpent.AI - 游戏代理框架。 使用任何视频游戏作为深度学习沙盒。
+     TensorFlow - 由Google创建的最受欢迎的深度学习框架。
+     Theano - 用于快速数值计算的库。  
 
 ##动态消息
 
