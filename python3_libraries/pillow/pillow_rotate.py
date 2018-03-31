@@ -10,7 +10,7 @@ from PIL import Image
 def rotate(files, dst, value=90):
     for file_ in files:
         img = Image.open(file_)
-        img = img.rotate(value, expand=1)
+        img = img.rotate(value)
         name = "{}{}{}".format(dst, os.sep, os.path.basename(file_))
         img.save(name)
 

@@ -204,7 +204,36 @@ def check_directory(name):
 
     print("mkdir {0} .".format(name))
     Path(name).mkdir(parents=True, exist_ok=True)
+    
+def get_filelistandlabel(src, error, filetype="ir",file_name='output/files.txt', 
+    label_name='output/label.txt'):
+    types = filetype.split(",")
+    if len(types)>1:
+        filetype = types[0]
+    
+    files = find_files_by_type(src,filetype)
+    labels = []
+    for file_ in files:
+        if error in file_:
+            labels.append(0)
+        else:
+            labels.append(1)
+            
+    if len(types)==2:
+        files.sort()
+        files2 = find_files_by_type(src,types[1])
+        files2.sort()
+        files = concat_list(files, files2, sep=' ')
+    output_file(file_name, files)
+    output_file(label_name, labels)
+        
 
+def find_files_by_type(src, filetype="ir"):
+    p = Path(src)
+    files = []
+    for file_name in p.glob('**/*.{0}'.format(filetype)):    
+        files.append(str(file_name))
+    return files
 
 def copy_files_by_types(src, dst, types="csv,py",
                         directories=None, one_directory=True):
@@ -482,6 +511,28 @@ def get_result_filelist(directoy):
         else:
             xls_files[version]['tongyong'] = str(filename)
     return xls_files
+
+def file2list(filename):
+    result = []
+    for line in open(filename):
+        item = line.strip()
+        if item:
+            result.append(item)
+    return result
+
+def concat_list(list1, list2, sep=','):
+    result = []
+    for i in range(len(list1)):
+        result.append("{}{}{}".format(list1[i], sep, list2[i]))  
+    return result
+
+
+def concat_file(file1, file2, sep=','):
+    list1 = file2list(file1)
+    list2 = file2list(file2)
+    result = concat_list(list1, list2, sep)
+    return result
+    
 
 if __name__ == '__main__':
     datas = count_number_by_filetypes(r'd:\tmp3',"jpg,pdf", output=True)
