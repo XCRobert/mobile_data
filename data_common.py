@@ -225,6 +225,7 @@ def get_filelistandlabel(src, error, filetype="ir",file_name='output/files.txt',
         files2.sort()
         files = concat_list(files, files2, sep=' ')
     output_file(file_name, files)
+    output_file('output/files.txt', files)
     output_file(label_name, labels)
         
 
@@ -402,6 +403,10 @@ def get_filename(items):
     '''将列名中的文件字符串只保留文件名'''
     return [ os.path.basename(x.strip()) for x in items]  
 
+def get_filename_without_ext(items):
+    '''将列名中的文件字符串只保留文件名'''
+    return [ os.path.basename(x.strip()).split('.')[0] for x in items]  
+
 def get_shuangtong_photos(diretory):
     results = {}
     base_human = r'{}{}human_test'.format(diretory, os.sep)
@@ -523,7 +528,18 @@ def file2list(filename):
 def concat_list(list1, list2, sep=','):
     result = []
     for i in range(len(list1)):
-        result.append("{}{}{}".format(list1[i], sep, list2[i]))  
+        try:
+            result.append("{}{}{}".format(list1[i], sep, list2[i]))  
+        except Exception as info:
+            print('Error: concat_list')
+            print(i)
+            print(len(list1), list1)
+            print(len(list2), list2)
+            print(info)
+            traceback.print_exc()
+            continue
+
+            
     return result
 
 
@@ -532,7 +548,28 @@ def concat_file(file1, file2, sep=','):
     list2 = file2list(file2)
     result = concat_list(list1, list2, sep)
     return result
+
+def check_pair_file(src, type1, type2, flag=False):
+    files1 = find_files_by_type(src, type1)
+    files1_name = get_filename_without_ext(files1) 
+    files2 = find_files_by_type(src, type2)
+    files2_name = get_filename_without_ext(files2) 
+    for name in set(files1_name)^set(files2_name):
+        #print(name)
+        if name in files1_name:
+            location = files1[files1_name.index(name)]
+        else:
+            location = files2[files2_name.index(name)]
+        print(location)
+        if flag:
+            os.remove(location)
+    
     
 
 if __name__ == '__main__':
-    datas = count_number_by_filetypes(r'd:\tmp3',"jpg,pdf", output=True)
+    check_pair_file(
+        "/home/andrew/code/data/tof/base_test_data/vivo-hacker-indoor-normal",
+        "ir", "depth")
+    check_pair_file(
+        "/home/andrew/code/data/tof/base_test_data/vivo-hacker-indoor-normal",
+        "ir", "depth")    

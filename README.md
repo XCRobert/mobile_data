@@ -719,7 +719,7 @@ django-viewlet因为github星级太少而未收录
  
  * matplotlib：Python 2D 绘图库。[链接](https://github.com/matplotlib/matplotlib) --推荐
 
- * bokeh：用Python进行交互式web绘图。[链接](https://github.com/bokeh/bokeh) --推荐
+ * bokeh：用Python进行交互式web绘图。[链接](https://github.com/bokeh/bokeh) --推荐 [英文快速入门](http://bokeh.pydata.org/en/latest/docs/user_guide/quickstart.html) [中文快速入门](https://github.com/DonaldDai/Bokeh-CN) 
 
  * ggplot：ggplot的 Python移植。[链接](https://github.com/yhat/ggpy) -荐
 
@@ -745,6 +745,25 @@ django-viewlet因为github星级太少而未收录
 
  * Seaborn - 使用Matplotlib进行统计数据可视化。[链接](https://github.com/mwaskom/seaborn) -荐
 
+ * [plotly.py](https://github.com/plotly/plotly.py) 交互式基于浏览器的绘图 -荐
+
+ [A Dramatic Tour through Python’s Data Visualization Landscape (including ggplot and Altair)](https://dsaber.com/2016/10/02/a-dramatic-tour-through-pythons-data-visualization-landscape-including-ggplot-and-altair/)
+
+ [Python data visualization: Comparing 7 tools](https://www.dataquest.io/blog/python-data-visualization-libraries/) 
+
+ [10 Useful Python Data Visualization Libraries for Any Discipline](https://blog.modeanalytics.com/python-data-visualization-libraries/) 
+
+ [Overview of Python Visualization Tools](http://pbpython.com/visualization-tools-1.html)
+
+ [Effectively Using Matplotlib ](http://pbpython.com/effective-matplotlib.html)
+
+ [pyecharts + notebook](https://www.kesci.com/apps/home/project/5a01adce60680b295c19deb4)
+
+ [Bokeh vs Dash](https://blog.sicara.com/bokeh-dash-best-dashboard-framework-python-shiny-alternative-c5b576375f7f)
+
+ [01+ Resources to Learn Data Science](http://code-love.com/2017/05/27/learn-data-science/) [chinese](http://www.dianyue.me/archives/498/y4xzcivaqf7shw5n/)
+
+ 
 
 ## 数据库(Database)
 

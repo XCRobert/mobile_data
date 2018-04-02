@@ -209,6 +209,13 @@ Test-Driven Development with Python, 2nd Edition - 2017 qq群144081101共享
 
 * A Computational Introduction to Digital Image Processing, Second Edition -2016 qq群6089740
 
+#### python图像其他
+
+* [matplotlib Plotting Cookbook-2014.pdf](http://file.allitebooks.com/20150514/matplotlib%20Plotting%20Cookbook.pdf)
+* [Mastering matplotlib-2015.pdf](http://file.allitebooks.com/20150807/Mastering%20matplotlib.pdf)
+* [Interactive Applications using Matplotlib-2015.pdf](http://file.allitebooks.com/20150731/Interactive%20Applications%20using%20Matplotlib.pdf)
+
+
 ## 测试
 
 * [Learning Android Application Testing-2015.pdf](http://file.allitebooks.com/20170415/Learning%20Android%20Application%20Testing.pdf)
