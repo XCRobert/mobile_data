@@ -205,7 +205,7 @@ def check_directory(name):
     print("mkdir {0} .".format(name))
     Path(name).mkdir(parents=True, exist_ok=True)
     
-def get_filelistandlabel(src, error, filetype="ir",file_name='output/files.txt', 
+def get_filelistandlabel(src, real, filetype="ir",file_name='output/files.txt', 
     label_name='output/label.txt'):
     types = filetype.split(",")
     if len(types)>1:
@@ -214,10 +214,10 @@ def get_filelistandlabel(src, error, filetype="ir",file_name='output/files.txt',
     files = find_files_by_type(src,filetype)
     labels = []
     for file_ in files:
-        if error in file_:
-            labels.append(0)
-        else:
+        if real in file_:
             labels.append(1)
+        else:
+            labels.append(0)
             
     if len(types)==2:
         files.sort()
@@ -563,13 +563,19 @@ def check_pair_file(src, type1, type2, flag=False):
         print(location)
         if flag:
             os.remove(location)
+
+def get_leaf_directories(input_directory):
+    results = set()
+    for root, dirs, files in os.walk(input_directory):
+        if files:
+            results.add(root)
+    return results    
     
     
 
 if __name__ == '__main__':
-    check_pair_file(
-        "/home/andrew/code/data/tof/base_test_data/vivo-hacker-indoor-normal",
-        "ir", "depth")
-    check_pair_file(
-        "/home/andrew/code/data/tof/base_test_data/vivo-hacker-indoor-normal",
-        "ir", "depth")    
+    list1 = file2list("/opt/test_tools/base/faceunlock_test_general_meil/output/files.txt")
+    list2 = file2list("/opt/test_tools/base/faceunlock_test_general_meil/result/live_no_files.txt")
+    l = list1 + list2
+    l.sort()
+    output_file("/opt/test_tools/base/faceunlock_test_general_meil/result/live_files.txt", l)

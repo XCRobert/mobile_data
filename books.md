@@ -446,4 +446,13 @@ Test-Driven Development with Python, 2nd Edition - 2017 qq群144081101共享
 * [MongoDB The Definitive Guide, 2nd Edition-2013.pdf](http://file.allitebooks.com/20150523/MongoDB%20The%20Definitive%20Guide,%202nd%20Edition.pdf)
 * [MongoDB-Cookbook-2014.pdf](http://file.allitebooks.com/20150422/MongoDB-Cookbook.pdf)
 
+## 分布式系统
 
+* [Distributed Computing with Python-2016.zip](http://file.allitebooks.com/20180311/Distributed%20Computing%20with%20Python.zip)
+* [Apache Flume Distributed Log Collection for Hadoop, 2nd Edition-2015.pdf](http://file.allitebooks.com/20161217/Apache%20Flume%20Distributed%20Log%20Collection%20for%20Hadoop,%202nd%20Edition.pdf)
+* [Algorithms for Sensor Systems-2015.pdf](http://file.allitebooks.com/20151101/Algorithms%20for%20Sensor%20Systems.pdf)
+* [Apache Flume- Distributed Log Collection for Hadoop-2013.pdf](http://file.allitebooks.com/20160202/Apache%20Flume-%20Distributed%20Log%20Collection%20for%20Hadoop.pdf)
+* [Designing Distributed Systems-2018.pdf](http://file.allitebooks.com/20180402/Designing%20Distributed%20Systems.pdf)
+* [Asynchronous Control for Networked Systems-2015.pdf](http://file.allitebooks.com/20151003/Asynchronous%20Control%20for%20Networked%20Systems.pdf)
+* [Distributed Networks- Intelligence, Security, and Applications-2013.pdf](http://file.allitebooks.com/20150823/Distributed%20Networks-%20Intelligence,%20Security,%20and%20Applications.pdf)
+* [Running Mainframe z on Distributed Platforms-2014.pdf](http://file.allitebooks.com/20150528/Running%20Mainframe%20z%20on%20Distributed%20Platforms.pdf)

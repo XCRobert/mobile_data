@@ -63,7 +63,7 @@ parser.add_argument('--version', action='version',
                     version='%(prog)s 1.1 Rongzhong xu 2018 03 19')
 
 options = parser.parse_args()
-keys = options.keys.split()
+keys = options.keys.lower().split()
 print(options.d)
 
 url = "{}{}".format(r"http://www.allitebooks.com/?s=", "+".join(keys))
