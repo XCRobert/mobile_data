@@ -205,6 +205,15 @@ def check_directory(name):
     print("mkdir {0} .".format(name))
     Path(name).mkdir(parents=True, exist_ok=True)
     
+def get_labels(files, real):
+    labels = []
+    for file_ in files:
+        if real in file_:
+            labels.append(1)
+        else:
+            labels.append(0)    
+    return labels
+    
 def get_filelistandlabel(src, real, filetype="ir",file_name='output/files.txt', 
     label_name='output/label.txt'):
     types = filetype.split(",")
@@ -212,18 +221,12 @@ def get_filelistandlabel(src, real, filetype="ir",file_name='output/files.txt',
         filetype = types[0]
     
     files = find_files_by_type(src,filetype)
-    labels = []
-    for file_ in files:
-        if real in file_:
-            labels.append(1)
-        else:
-            labels.append(0)
-            
+    files.sort()  
     if len(types)==2:
-        files.sort()
         files2 = find_files_by_type(src,types[1])
         files2.sort()
         files = concat_list(files, files2, sep=' ')
+    labels = get_labels(files, real)      
     output_file(file_name, files)
     output_file('output/files.txt', files)
     output_file(label_name, labels)
@@ -533,8 +536,11 @@ def concat_list(list1, list2, sep=','):
         except Exception as info:
             print('Error: concat_list')
             print(i)
-            print(len(list1), list1)
-            print(len(list2), list2)
+            print(len(list1), len(list2))
+            if len(list1) > i:
+                print(list1[i])
+            else:
+                print(list2[i])
             print(info)
             traceback.print_exc()
             continue
@@ -578,4 +584,6 @@ if __name__ == '__main__':
     list2 = file2list("/opt/test_tools/base/faceunlock_test_general_meil/result/live_no_files.txt")
     l = list1 + list2
     l.sort()
+    labels = get_labels(l, '/photo/')
     output_file("/opt/test_tools/base/faceunlock_test_general_meil/result/live_files.txt", l)
+    output_file("/opt/test_tools/base/faceunlock_test_general_meil/result/live_label.txt", labels)
