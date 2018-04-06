@@ -456,3 +456,28 @@ Test-Driven Development with Python, 2nd Edition - 2017 qq群144081101共享
 * [Asynchronous Control for Networked Systems-2015.pdf](http://file.allitebooks.com/20151003/Asynchronous%20Control%20for%20Networked%20Systems.pdf)
 * [Distributed Networks- Intelligence, Security, and Applications-2013.pdf](http://file.allitebooks.com/20150823/Distributed%20Networks-%20Intelligence,%20Security,%20and%20Applications.pdf)
 * [Running Mainframe z on Distributed Platforms-2014.pdf](http://file.allitebooks.com/20150528/Running%20Mainframe%20z%20on%20Distributed%20Platforms.pdf)
+
+
+## 人工智能机器学习
+
+### Scikit-learn
+
+* [scikit-learn Cookbook-2014.pdf](http://file.allitebooks.com/20150514/scikit-learn%20Cookbook.pdf)
+* [Mastering Machine Learning With scikit-learn-2014.pdf](http://file.allitebooks.com/20160503/Mastering%20Machine%20Learning%20With%20scikit-learn.pdf)
+* [Learning scikit-learn Machine Learning in Python-2013.pdf](http://file.allitebooks.com/20150731/Learning%20scikit-learn%20Machine%20Learning%20in%20Python.pdf)
+* Hands-on Machine Learning with Scikit-learn & Tensorflow qq群6089740
+* scikit-learn机器学习：常用算法原理及编程实战  暂无资源
+* 机器学习之路:Caffe、Keras、scikit-learn实战　－　2017　qq群6089740
+* 机器学习实战　- 2014 qq群6089740
+* 深度学习(deep learning) - 2017 qq群6089740
+* 机器学习:Python实践 - 2018 暂无资源
+* Learning scikit-learn: Machine Learning in Python -2013
+* scikit-learn Cookbook - Second Edition - 2017 qq群6089740
+* 机器学习- 周志华 - 2016 qq群6089740
+* Python Machine Learning: Machine Learning and Deep Learning with Python, scikit-learn, and TensorFlow, 2nd - 2017 qq群6089740
+* Designing data-intensive applications - 2015 qq群6089740
+* scikit-learn机器学习：常用算法原理及编程实战 平装 – 2018年2月1日 暂无资源
+* scikit-learn : Machine Learning Simplified: Implement scikit-learn into every step of the data science pipeline　-2017 暂无资源
+* Python机器学习基础教程 -2018 暂无资源
+* Python数据科学手册 -2018 暂无资源
+* Classifying Data With Scikit-learn - 2017 暂无资源
