@@ -93,6 +93,13 @@ Test-Driven Development with Python, 2nd Edition - 2017 qq群144081101共享
 
 * Python for Data Analysis, 2nd Edition - 2017.pdf qq群：630011153 * [下载](http://file.allitebooks.com/20171009/Python%20for%20Data%20Analysis,%202nd%20Edition.pdf)
 
+#### NumPy
+
+* [NumPy Beginners Guide Third Edition-2015.pdf](http://file.allitebooks.com/20150807/NumPy%20Beginners%20Guide%20Third%20Edition.pdf)
+* [Learning NumPy Array-2014.pdf](http://file.allitebooks.com/20150731/Learning%20NumPy%20Array.pdf)
+* [NumPy Cookbook, Second Edition-2015.pdf](http://file.allitebooks.com/20160326/NumPy%20Cookbook,%20Second%20Edition.pdf)
+* [NumPy Beginner-s Guide, 2nd Edition-2013.pdf](http://file.allitebooks.com/20150514/NumPy%20Beginner-s%20Guide,%202nd%20Edition.pdf)
+
 #### 爬虫
 
 * [Python Requests Essentials - 2015.pdf](http://file.allitebooks.com/20170813/Python%20Requests%20Essentials.pdf)
