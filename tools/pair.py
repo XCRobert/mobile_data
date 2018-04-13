@@ -7,8 +7,6 @@
 import argparse
 
 from data_common import *
-
-
     
 parser = argparse.ArgumentParser()
 parser.add_argument('directory', action="store", help=u'目录')

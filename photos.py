@@ -8,6 +8,7 @@ import os
 
 import cv2
 import numpy as np
+import face_recognition
 from PIL import Image, ImageDraw
 
 def mark_image(filename, dst, poses):
@@ -68,3 +69,26 @@ def rotate2(files, dst, value=90):
         result = rotateImage(img, value)
         cv2.imwrite("{}{}{}".format(dst, os.sep, os.path.basename(file_)), 
                     result) 
+
+def find_face(filename, rotate=None, model=None):
+    img = cv2.imread(filename, 0)
+    if rotate:
+        img = rotateImage(img, rotate)
+    if model:
+        return face_recognition.face_locations(img,model=model)  
+    else:
+        return face_recognition.face_locations(img)  
+    
+def raw2jpg(filename, height=480, width=640):
+    try:
+        img = np.fromfile(filename, dtype=np.uint16)
+        img = img.reshape( (height, width) )
+        img.astype(np.float)
+        img = np.sqrt(img)
+        img = img * (255 / img.max())
+        #img.astype(np.uint8)
+        cv2.imwrite(filename+'.jpg', img)
+    except:
+        return False
+
+    return True    

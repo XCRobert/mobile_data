@@ -537,6 +537,8 @@ def concat_list(list1, list2, sep=','):
             print('Error: concat_list')
             print(i)
             print(len(list1), len(list2))
+            #print(list1)
+            #print(list2)
             if len(list1) > i:
                 print(list1[i])
             else:
