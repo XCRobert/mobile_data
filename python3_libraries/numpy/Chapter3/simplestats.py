@@ -1,4 +1,7 @@
-from __future__ import print_function
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
+# Author:    xurongzhong#126.com 技术支持qq群：630011153
+# CreateDate: 2018-04-17
 import numpy as np
 
 c=np.loadtxt('data.csv', delimiter=',', usecols=(6,), unpack=True)

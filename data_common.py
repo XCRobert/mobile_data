@@ -12,6 +12,7 @@ from pathlib import Path
 import glob
 import hashlib
 import re
+import collections
 
 import pandas
 
@@ -335,7 +336,7 @@ def concat_excel(files, usecols=None, index_col=None, strips={}):
     return df
 
 
-def file2dict(filename, change=False, multi=False):
+def file2dict(filename, change=False, multi=False, basename=False):
     result = {}
     for line in open(filename):
         if line.strip():   
@@ -343,12 +344,29 @@ def file2dict(filename, change=False, multi=False):
                 value, key = line.split()
             else:
                 key, value = line.split()
+            if basename:
+                key = os.path.basename(key)            
             if multi:   
                 if key not in result:
                     result[key] = []
                 result[key].append(value)
             else:
                 result[key] = value
+    return result
+
+def file2dict1(filename, value=-1, basename=False):
+    '''
+    输入文件只有一列，从该列提取一个字段做key。
+    '''
+    result = collections.OrderedDict()
+    for line in open(filename):
+        item = line.strip()
+        if not item:
+            continue
+        key = item.split('/')[value]
+        if basename:
+            item = os.path.basename(item)
+        result[key] = item
     return result
 
 def get_md5(content, is_file=False):
@@ -520,11 +538,13 @@ def get_result_filelist(directoy):
             xls_files[version]['tongyong'] = str(filename)
     return xls_files
 
-def file2list(filename):
+def file2list(filename,basename=False):
     result = []
     for line in open(filename):
         item = line.strip()
         if item:
+            if basename:
+                item = os.path.basename(item)
             result.append(item)
     return result
 
@@ -579,6 +599,41 @@ def get_leaf_directories(input_directory):
             results.add(root)
     return results    
     
+def get_compare_reulst(files, server_file, key, out, server_columns, output_columns):
+    '''
+    data_common.get_compare_reulst(['_little_photo.xls','_little_real.xls'],
+         'liveness_little.csv',  '活体分数', 'dataframe.xlsx',
+        ["server_score", "filename", "depth_file_name"], 
+        ['活体分数','server_score','diff_score'])
+        
+    data_common.get_compare_reulst('verify.xls',
+        server_result_file, '最高相似度', 
+        'dataframe.xlsx',
+        ["server_score", "name","filename"], 
+        ['最高相似度','server_score','diff_score'])
+     
+    data_common.get_compare_reulst(['gaze.xls', 'no_gaze.xls'],
+        server_result_path + '\gaze_little.csv',  '注视分数', 
+        'dataframe.xlsx',
+        ["server_score", "filename"], 
+        ['注视分数','server_score','diff_score'])       
+    '''
+    if type(files) is list:
+        df = concat_excel(files)
+    else:
+        df = pandas.read_excel(files)
+    df.index = df[u'识别图片的路径'].apply(
+        lambda x:os.path.basename(x.split()[0]))
+    
+    df_server = pandas.read_csv(server_file, sep='\s', names=server_columns)
+    df_server.index = df_server['filename'].apply(
+        lambda x:os.path.basename(x.split()[0]))
+    print(df.index)
+    print(df_server.index)
+    df['server_score'] = df_server['server_score']
+    df['diff_score'] = df['server_score'] - df[key]
+
+    df.to_excel(out, columns=output_columns)    
     
 
 if __name__ == '__main__':

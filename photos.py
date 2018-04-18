@@ -5,6 +5,7 @@
 # photos.py
 
 import os
+import traceback
 
 import cv2
 import numpy as np
@@ -88,7 +89,21 @@ def raw2jpg(filename, height=480, width=640):
         img = img * (255 / img.max())
         #img.astype(np.uint8)
         cv2.imwrite(filename+'.jpg', img)
-    except:
+    except Exception as info:
+        print('Error: s {}'.format(filename))
+        print(info)
+        traceback.print_exc()
+        print('Please close file and directories and continue...')
         return False
 
     return True    
+
+def split_raw(filename):
+    img = np.fromfile(filename, dtype=np.uint16)
+    print(filename)
+    size = int(img.shape[0])
+    ir = img[0:int(size/2)]
+    ir.tofile(r"{}.ir".format(filename))  
+    depth = img[int(size/2):]
+    depth.tofile(r"{}.depth".format(filename))         
+    
