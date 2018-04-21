@@ -8,6 +8,28 @@ book_scraper/requests_allitbooks.py 根据搜索词下载allitbooks的书籍，[
 
 wingide6 破解：other/wingide6_python3_crack.py
 
+tools目录：
+
+ * check_face.py  从excel中读取文件，进行人脸识别
+ 
+ * check_md5.py 多进程检查MD5值重复文件 [文档](http://blog.sciencenet.cn/blog-2604609-1105189.html)
+ 
+ * concat_file.py 合并文件，和linux的paste命令类似
+ 
+ * get_gaze_value.py 获取人脸识别服务器端注视的错误统计
+ 
+ * get_live_server_result.py 获取人脸识别服务器端活体的错误统计
+ 
+ * get_range.py 获取人脸识别的区间值
+ 
+ * get_verify_server_result.py 获取人脸识别服务器端比对的错误统计
+ 
+ * raw2jpg.py 转换ir,depth等raw图为jpg图
+ 
+ * rotate.py 图像旋转
+
+ * split_raw.py 切分raw图为ir,depth图
+
 [python、软件测试等海量书籍](books.md)
 
 Table of Contents
