@@ -84,17 +84,16 @@ df2.to_excel(writer, sheet_name='假人识别为真人', index=False)
 writer.save()
 
 df3 = pd.DataFrame(results, columns=[
-    "类别","总数","真人总数","真人识别为假人", "假人总数", "假人识别为真人",
-   "frr", "far","未识别数"])
+    "类别","far", "frr", "总数","真人总数","真人识别为假人", "假人总数", "假人识别为真人","未识别数","未识别率"])
 df3.to_excel("cat.xls")
 
 results = []
 values = [0.90, 0.91, 0.92, 0.93, 0.94, 0.95, 0.96, 0.97, 0.98, 0.99, 0.999]
 for value in values:
     result = servers.get_live_frr_far(df, 'score', value, 'label')
-    results.append([value, result[-2], result[-3]])
+    results.append([value, *result])
     
-df4 = pd.DataFrame(results, columns=["Threshold","FAR","FRR"])
+df4 = pd.DataFrame(results, columns=["Threshold","FAR","FRR","total","real_num","frr_num", "photo_num", "far_num","unknow","unknow_rate"])
 df4.to_csv("live_far_frr.csv", index=None)    
     
     

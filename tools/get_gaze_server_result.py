@@ -4,6 +4,9 @@
 # CreateDate: 2018-1-8 
 # check_md5.py
 
+'''
+ python3 get_gaze_server_result.py /opt/test_tools/base/faceunlock_test_general_meil/output/label-gaze-2018-04-19_10-05-42.txt  /opt/test_tools/base/faceunlock_test_general_meil/output/files-gaze-2018-04-19_10-05-42.txt /opt/test_tools/base/faceunlock_test_general_meil/result/gaze2.2.0.csv '''
+
 import argparse
 
 import pandas as pd
@@ -40,6 +43,9 @@ for value in values:
     result = servers.get_gaze_frr_far(df, 'score', value)
     results.append([value, *result])
 
-df4 = pd.DataFrame(results, columns=["Threshold","number","real_number", "frr_number", "no_number", "far_number","FAR", "FRR"])
+df4 = pd.DataFrame(
+    results, 
+    columns=["Threshold","FAR", "FRR", "number","real_number", "frr_number",
+             "no_number", "far_number","unknow","unknow_rate"])
 
 df4.to_csv("gaze_far_frr.csv",index=None)

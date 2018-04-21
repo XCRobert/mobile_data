@@ -10,6 +10,7 @@ import pandas as pd
 
 def get_live_frr_far(df,colomn1,score,colomn2):
     
+    total = len(df)
     unknow = len(df[df[colomn1] == -1])
     df = df[df[colomn1] != -1]
     real_number = len(df[df[colomn2] == 0])
@@ -21,10 +22,13 @@ def get_live_frr_far(df,colomn1,score,colomn2):
     far_number = len(df.loc[((df[colomn1] < score) & (df[colomn2] == 1))])
     frr = 0 if not real_number else frr_number/float(real_number)
     far = 0 if not photo_number else far_number/float(photo_number)
-    return (len(df), real_number, frr_number, photo_number, far_number, frr, far, unknow)
+    return (far, frr, total, real_number, frr_number, photo_number, far_number, unknow, unknow/float(total))
 
 def get_gaze_frr_far(df,colomn1,score):
     
+    total = len(df)
+    unknow = len(df[df[colomn1] == -1])
+    df = df[df[colomn1] != -1]
     real_number = len(df.loc[df['filename'].str.contains('/gaze/')])
     no_number = len(df.loc[df['filename'].str.contains('/no_gaze/')])
     
@@ -34,7 +38,7 @@ def get_gaze_frr_far(df,colomn1,score):
     far_number = len(df.loc[(df['score'] > score) & df['filename'].str.contains('/no_gaze/')] )
     frr = 0 if not real_number else frr_number/float(real_number)
     far = 0 if not no_number else far_number/float(no_number)
-    return (len(df), real_number, frr_number, no_number, far_number, frr, far)
+    return (far, frr, total, real_number, frr_number, no_number, far_number, unknow, unknow/float(total))
 
 
 def load_verify_server_result(names,files,scores, 
@@ -84,13 +88,13 @@ def get_verify_errors(df, real_photos, score):
     
     return df_person_errors, df_other_errors
 
-def get_verify_frr_far(df,df_person_errors, df_other_errors):
+def get_verify_frr_far(selfs_num, others_num, df_person_errors, df_other_errors, colomn, score):
     
-    real_number = len(df_person_errors)
-    photo_number = len(df_other_errors)
-    frr = 0 if not real_number else real_number/float(len(df))
-    far = 0 if not photo_number else photo_number/float(len(df))
-    return (len(df), real_number, photo_number, frr, far)
+    frr_num = len(df_person_errors[df_person_errors[colomn] < score])
+    far_num = len(df_other_errors[df_other_errors[colomn] > score])
+    frr = 0 if not frr_num else frr_num/float(selfs_num)
+    far = 0 if not far_num else far_num/float(others_num)
+    return (far, frr, selfs_num + others_num, selfs_num, frr_num, others_num, far_num)
     
 def get_verify_server_result(
     names,files,scores, score=0.7, output_dir="./",
