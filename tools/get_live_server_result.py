@@ -4,16 +4,21 @@
 # CreateDate: 2018-4-18 
 # check_md5.py
 
+'''
+python3 get_live_server_result.py /opt/test_tools/base/faceunlock_test_general_meil/result/label-live.txt  /opt/test_tools/base/faceunlock_test_general_meil/result/live-files.txt  /opt/test_tools/base/faceunlock_test_general_meil/result/live3.71.csv -s 0.99
+'''
+
 import pandas as pd
 import os
 import argparse
 
+import servers
 
 parser = argparse.ArgumentParser()
 parser.add_argument('labels', action="store", help=u'labels')
 parser.add_argument('files', action="store", help=u'测试图片列表文件')
 parser.add_argument('scores', action="store", help=u'服务器liveness结果')
-parser.add_argument('-s', action="store", dest="score", default=0.7, 
+parser.add_argument('-s', action="store", dest="score", default=0.7, type=float,
                     help=u'分数的门限')
 parser.add_argument('-o', action="store", dest="output",
                     default="live_result.xlsx", help=u'结果输出目录') 
@@ -59,32 +64,40 @@ print(df.head())
 results =[]
 
 for name, group in df.groupby('type'):
-    print(name)
-    # 真人识别为假人
-    df1 = group.loc[((group['score'] > options.score) & (group['label'] == 0))]
-    # 假人识别为真人
-    df2 = group.loc[((group['score'] < options.score) & (group['label'] == 1))]
-    results.append([name, len(group), len(df1), len(df2)])
+    result = servers.get_live_frr_far(group, 'score', options.score, 'label')
+    results.append([name, *result])
     
     
 for name, group in df.groupby('label'):
-    print(name)
-    # 真人识别为假人
-    df1 = group.loc[((group['score'] > options.score) & (group['label'] == 0))]
-    # 假人识别为真人
-    df2 = group.loc[((group['score'] < options.score) & (group['label'] == 1))]
-    results.append([name, len(group), len(df1), len(df2)])    
+    result = servers.get_live_frr_far(group, 'score', options.score, 'label')
+    results.append([name, *result])  
 
-print(results)
 # 真人识别为假人
 df1 = df.loc[((df['score'] > options.score) & (df['label'] == 0))]
 # 假人识别为真人
 df2 = df.loc[((df['score'] < options.score) & (df['label'] == 1))]
-results.append(["All", len(df), len(df1), len(df2)])
+result = servers.get_live_frr_far(df, 'score', options.score, 'label')
+results.append(["All", *result])
 writer = pd.ExcelWriter(options.output)
 df1.to_excel(writer, sheet_name='真人识别为假人', index=False)
 df2.to_excel(writer, sheet_name='假人识别为真人', index=False)
 writer.save()
 
-df3 = pd.DataFrame(results, columns=["类别","总数","真人识别为假人","假人识别为真人"])
+df3 = pd.DataFrame(results, columns=[
+    "类别","总数","真人总数","真人识别为假人", "假人总数", "假人识别为真人",
+   "frr", "far","未识别数"])
 df3.to_excel("cat.xls")
+
+results = []
+values = [0.90, 0.91, 0.92, 0.93, 0.94, 0.95, 0.96, 0.97, 0.98, 0.99, 0.999]
+for value in values:
+    result = servers.get_live_frr_far(df, 'score', value, 'label')
+    results.append([value, result[-2], result[-3]])
+    
+df4 = pd.DataFrame(results, columns=["Threshold","FAR","FRR"])
+df4.to_csv("live_far_frr.csv", index=None)    
+    
+    
+    
+
+
