@@ -90,10 +90,9 @@ def raw2jpg(filename, height=480, width=640):
         #img.astype(np.uint8)
         cv2.imwrite(filename+'.jpg', img)
     except Exception as info:
-        print('Error: s {}'.format(filename))
+        print('Error: {}'.format(filename))
         print(info)
         traceback.print_exc()
-        print('Please close file and directories and continue...')
         return False
 
     return True    
