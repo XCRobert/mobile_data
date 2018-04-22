@@ -73,7 +73,7 @@ Table of Contents
       * [数据可视化(Data Visualization)](#数据可视化data-visualization)
       * [数据库(Database)](#数据库database)
       * [数据库驱动(Database Drivers)](#数据库驱动database-drivers)
-      * [日期和时间（Date and Time）](#日期和时间date-and-time)
+      * [日期和时间(Date and Time)](#日期和时间date-and-time)
       * [调试工具(Debugging Tools)](#调试工具debugging-tools)
       * [Deep Learning](#deep-learning)
       * [图形用户界面(GUI)](#图形用户界面gui)
@@ -90,15 +90,15 @@ Table of Contents
       * [电子邮件(Email)](#电子邮件email)
       * [环境管理(Environment Management)](#环境管理environment-management)
       * [文件(Files)](#文件files)
-      * [外部函数接口（Foreign Function Interface）](#外部函数接口foreign-function-interface)
-      * [表单（Forms）](#表单forms)
-      * [函数式编程（Functional Programming）](#函数式编程functional-programming)
+      * [外部函数接口(Foreign Function Interface)](#外部函数接口foreign-function-interface)
+      * [表单(Forms)](#表单forms)
+      * [函数式编程(Functional Programming)](#函数式编程functional-programming)
       * [包管理(Package Management)](#包管理package-management)
       * [RESTful API](#restful-api)
       * [RPC服务器(RPC Servers)](#rpc服务器rpc-servers)
       * [搜索](#搜索)
-      * [序列化（Serialization）](#序列化serialization)
-      * [无服务器框架（Serverless Frameworks](#无服务器框架serverless-frameworks)
+      * [序列化(Serialization)](#序列化serialization)
+      * [无服务器框架(Serverless Frameworks](#无服务器框架serverless-frameworks)
       * [特殊文本格式处理(Specific Formats Processing)](#特殊文本格式处理specific-formats-processing)
          * [通用](#通用)
          * [Office](#office)
@@ -348,7 +348,7 @@ radar 因为github星级太少而未收录
 
  * Ajenti - Linux & BSD web管理面板。管理进程和文件等。 [链接](https://github.com/ajenti/ajenti) 
 
- * django-suit - 现代主题的Django管理界面（仅限非商业用途）。[链接](https://github.com/darklow/django-suit) 
+ * django-suit - 现代主题的Django管理界面(仅限非商业用途)。[链接](https://github.com/darklow/django-suit) 
 
  * django-xadmin -  方便的Django admin替代。 完全支持插件扩展，基于 Twitter Bootstrap，并有站内书签、支持 xls, csv, xml和json数据导入等不少增强。 [链接](https://github.com/sshwsfc/xadmin) 
 
@@ -410,9 +410,9 @@ django-simple-spam-blocker因为github星级太少而未收录
 
 操作音频的库。
 
- * audiolazy -  数字信号处理（DSP）软件包。 [链接](https://github.com/danilobellini/audiolazy) 
+ * audiolazy -  数字信号处理(DSP)软件包。 [链接](https://github.com/danilobellini/audiolazy) 
 
- * audioread - 跨库（GStreamer +Core Audio+ MAD + FFmpeg）音频解码。[链接](https://github.com/beetbox/audioread) 
+ * audioread - 跨库(GStreamer +Core Audio+ MAD + FFmpeg)音频解码。[链接](https://github.com/beetbox/audioread) 
 
  * beets - 音乐库管理和MusicBrainzb标签。[链接](https://github.com/beetbox/beets)  -- 推荐
 
@@ -515,7 +515,7 @@ scikits.talkbox 因长时间未更新未收录
 
  * Beaker：缓存和会话库，可以用在 web 应用和独立 Python脚本和应用上。[链接](https://github.com/bbangert/beaker) 
 
- * DiskCache：Python磁盘缓存（Django兼容）。。[链接](https://github.com/grantjenks/python-diskcache/) 
+ * DiskCache：Python磁盘缓存(Django兼容)。。[链接](https://github.com/grantjenks/python-diskcache/) 
 
  * django-cache-machine：Django 模型的自动缓存和失效。[链接](https://github.com/django-cache-machine/django-cache-machine) 
 
@@ -568,7 +568,7 @@ django-viewlet因为github星级太少而未收录
 
 ### 命令行程序开发( Command-line Application Development)
 
- * asciimatics：跨平台，全屏终端包（即鼠标/键盘输入和彩色，定位文本输出），完整的复杂动画和特殊效果的高级API。[链接](https://github.com/peterbrittain/asciimatics) 
+ * asciimatics：跨平台，全屏终端包(即鼠标/键盘输入和彩色，定位文本输出)，完整的复杂动画和特殊效果的高级API。[链接](https://github.com/peterbrittain/asciimatics) 
 
  * cement：Python 的命令行程序框架。[链接](https://github.com/datafolklabs/cement/) 
 
@@ -598,7 +598,7 @@ django-viewlet因为github星级太少而未收录
 
  * caniusepython3：判断是哪个项目妨碍你你移植到 Python 3。[链接](https://github.com/brettcannon/caniusepython3) 
 
- * cookiecutter：从 cookiecutters（项目模板）创建项目的一个命令行工具。[链接](https://github.com/brettcannon/caniusepython3) 
+ * cookiecutter：从 cookiecutters(项目模板)创建项目的一个命令行工具。[链接](https://github.com/brettcannon/caniusepython3) 
 
  * doitlive：一个用来在终端中进行现场演示的工具。[链接](https://github.com/sloria/doitlive) 
 
@@ -844,7 +844,7 @@ Python实现的数据库。
 
   * txRedis：基于 Twisted 的 Redis 客户端。[链接](https://github.com/driftx/Telephus) 
 
-## 日期和时间（Date and Time）
+## 日期和时间(Date and Time)
 
 操作日期和时间的类库。
 
@@ -1017,22 +1017,22 @@ Caffe - 一个快速开放的深度学习框架..
 
  * devpi：PyPI 服务和打包/测试/分发工具。[链接](https://github.com/devpi/devpi/)
 
- * localshop：本地 PyPI 服务（自定义包并且自动对 PyPI 镜像）。[链接](https://github.com/mvantellingen/localshop)
+ * localshop：本地 PyPI 服务(自定义包并且自动对 PyPI 镜像)。[链接](https://github.com/mvantellingen/localshop)
 
 
 ## 分发
 
 打包为可执行文件以便分发。
 
- * PyInstaller：将 Python 程序转换成独立的执行文件（跨平台）。[链接](https://github.com/pyinstaller/pyinstaller)
+ * PyInstaller：将 Python 程序转换成独立的执行文件(跨平台)。[链接](https://github.com/pyinstaller/pyinstaller)
 
  * dh-virtualenv：构建并将 virtualenv 虚拟环境作为Debian 包来发布。[链接](https://github.com/spotify/dh-virtualenv)
 
  * Nuitka：将脚本、模块、包编译成可执行文件或扩展模块。[链接](http://nuitka.net/)
 
- * py2app：将 Python 脚本变为独立软件包（Mac OS X）。[链接](https://bitbucket.org/ronaldoussoren/py2app)
+ * py2app：将 Python 脚本变为独立软件包(Mac OS X)。[链接](https://bitbucket.org/ronaldoussoren/py2app)
 
- * py2exe：将 Python 脚本变为独立软件包（Windows）。[链接](https://sourceforge.net/projects/py2exe/files/py2exe/0.6.9/) --已经比较久没有更新了。
+ * py2exe：将 Python 脚本变为独立软件包(Windows)。[链接](https://sourceforge.net/projects/py2exe/files/py2exe/0.6.9/) --已经比较久没有更新了。
 
  * pynsist：用来创建 Windows 安装程序的工具，可以在安装程序中打包 Python本身。[链接](https://github.com/takluyver/pynsist/blob/master/doc/index.rst)
 
@@ -1168,15 +1168,15 @@ Python版本和环境管理
 
 ## 文件(Files)
 
-文件管理和 MIME（多用途的网际邮件扩充协议）类型检测。
+文件管理和 MIME(多用途的网际邮件扩充协议)类型检测。
 
- * imghdr：（Python 标准库）检测图片类型。[链接](https://docs.python.org/2/library/imghdr.html)
+ * imghdr：(Python 标准库)检测图片类型。[链接](https://docs.python.org/2/library/imghdr.html)
 
- * mimetypes：（Python 标准库）将文件名映射为 MIME 类型。[链接](https://docs.python.org/2/library/mimetypes.html)
+ * mimetypes：(Python 标准库)将文件名映射为 MIME 类型。[链接](https://docs.python.org/2/library/mimetypes.html)
 
  * path.py：对 os.path 进行封装的模块。[链接](https://github.com/jaraco/path.py) 
 
- * pathlib：（Python3.4+ 标准库）跨平台的、面向对象的路径操作库。[链接](https://docs.python.org/dev/library/pathlib.html) --强烈推荐
+ * pathlib：(Python3.4+ 标准库)跨平台的、面向对象的路径操作库。[链接](https://docs.python.org/dev/library/pathlib.html) --强烈推荐
 
  * python-magic：文件类型检测的第三方库 libmagic 的 Python 接口。[链接](https://github.com/ahupp/python-magic)
 
@@ -1186,7 +1186,7 @@ Python版本和环境管理
 
 
 
-## 外部函数接口（Foreign Function Interface）
+## 外部函数接口(Foreign Function Interface)
 
  * cffi：调用 C 代码。[链接](https://bitbucket.org/cffi/cffi) --强烈推荐
 
@@ -1196,19 +1196,19 @@ Python版本和环境管理
 
  * SWIG：简单的包装器和接口生成器。[链接](http://www.swig.org/Doc1.3/Python.html) 
 
-## 表单（Forms）
+## 表单(Forms)
 
  * Deform：Python HTML 表单生成库，受到了 formish 表单生成库的启发。[链接](https://github.com/Pylons/deform) 
 
  * django-bootstrap3：集成了 Bootstrap 3 的 Django。[链接](https://github.com/dyve/django-bootstrap3) --推荐
 
- * django-crispy-forms：非常优雅且 DRY（Don't repeat yourself） 的方式来创建美观的表单。[链接](https://github.com/dyve/django-bootstrap3) --推荐
+ * django-crispy-forms：非常优雅且 DRY(Don't repeat yourself) 的方式来创建美观的表单。[链接](https://github.com/dyve/django-bootstrap3) --推荐
 
  * django-remote-forms：平台独立的 Django 表单序列化工具。[链接](https://github.com/WiserTogether/django-remote-forms) 
 
  * WTForms：灵活的表单验证和渲染库。[链接](https://github.com/wtforms/wtforms) 
 
-## 函数式编程（Functional Programming）
+## 函数式编程(Functional Programming)
 
  * CyToolz：Toolz 的 Cython 实现 : 高性能函数工具。[链接](https://github.com/pytoolz/cytoolz/) 
 
@@ -1236,121 +1236,121 @@ Python版本和环境管理
 
 *允许或拒绝用户访问数据或功能的库。*
 
-* [Carteblanche]（https://github.com/neuman/python-carteblanche/） - 将代码与用户和设计师的想法对齐的模块。也神奇地处理导航和权限。
-* [django-guardian]（https://github.com/django-guardian/django-guardian） - 为Django 1.2+权限管理
-* [django-rules]（https://github.com/dfunckt/django-rules） - 小巧但功能强大的应用程序，它为Django提供对象级权限，而不需要数据库。
+* [Carteblanche](https://github.com/neuman/python-carteblanche/) - 将代码与用户和设计师的想法对齐的模块。也神奇地处理导航和权限。
+* [django-guardian](https://github.com/django-guardian/django-guardian) - 为Django 1.2+权限管理
+* [django-rules](https://github.com/dfunckt/django-rules) - 小巧但功能强大的应用程序，它为Django提供对象级权限，而不需要数据库。
 
 ##进程(Processes)
 
 *用于启动和与OS进程进行通信的库。*
 
-* [delegator.py]（https://github.com/kennethreitz/delegator.py） - [Subprocesses]（https://docs.python.org/3.6/library/subprocess.html）用于Humans™2.0。 --推荐
-* [sarge]（http://sarge.readthedocs.io/en/latest/） - Subprocesses的另一个封装。
-* [sh]（https://github.com/amoffat/sh） - 一个全面的Python子程序替代品。  --推荐
+* [delegator.py](https://github.com/kennethreitz/delegator.py) - [Subprocesses](https://docs.python.org/3.6/library/subprocess.html)用于Humans™2.0。 --推荐
+* [sarge](http://sarge.readthedocs.io/en/latest/) - Subprocesses的另一个封装。
+* [sh](https://github.com/amoffat/sh) - 一个全面的Python子程序替代品。  --推荐
 
 ##队列(Queue)
 
 *用于处理事件和任务队列的库。*
 
-* [celery]（http://www.celeryproject.org/） - 基于分布式消息传递的异步任务队列/作业队列。 --推荐
-* [huey]（https://github.com/coleifer/huey） - 小多线程任务队列。
-* [mrq]（https://github.com/pricingassistant/mrq） - Queue先生 - 使用Redis＆gevent的Python中的分布式工作者任务队列。
-* [rq]（http://python-rq.org/） - 简单的Python作业队列。 --推荐
-* [simpleq]（https://github.com/rdegges/simpleq） - 一个简单的，无限可扩展的基于Amazon SQS的队列。
+* [celery](http://www.celeryproject.org/) - 基于分布式消息传递的异步任务队列/作业队列。 --推荐
+* [huey](https://github.com/coleifer/huey) - 小多线程任务队列。
+* [mrq](https://github.com/pricingassistant/mrq) - Queue先生 - 使用Redis＆gevent的Python中的分布式工作者任务队列。
+* [rq](http://python-rq.org/) - 简单的Python作业队列。 --推荐
+* [simpleq](https://github.com/rdegges/simpleq) - 一个简单的，无限可扩展的基于Amazon SQS的队列。
 
 ##推荐系统(Recommender Systems)
 
 *用于构建推荐系统的库。*
 
-* [annoy]（https://github.com/spotify/annoy） - 针对内存使用进行了优化的C ++ / Python近似最近邻居。 --推荐
-* [fastFM]（https://github.com/ibayer/fastFM） - 因式分解机器库。
-* [implicit]（https://github.com/benfred/implicit） - 隐式数据集协作过滤的快速Python实现。
-* [libffm]（https://github.com/guestwalk/libffm） - Field-aware因式分解机（FFM）库。
-* [LightFM]（https://github.com/lyst/lightfm） - 一些流行推荐算法的Python实现。
-* [surprise]（http://surpriselib.com） - 用于构建和分析推荐系统的scikit。
-* [TensorRec]（https://github.com/jfkirk/tensorrec） - TensorFlow中的推荐引擎框架 
+* [annoy](https://github.com/spotify/annoy) - 针对内存使用进行了优化的C ++ / Python近似最近邻居。 --推荐
+* [fastFM](https://github.com/ibayer/fastFM) - 因式分解机器库。
+* [implicit](https://github.com/benfred/implicit) - 隐式数据集协作过滤的快速Python实现。
+* [libffm](https://github.com/guestwalk/libffm) - Field-aware因式分解机(FFM)库。
+* [LightFM](https://github.com/lyst/lightfm) - 一些流行推荐算法的Python实现。
+* [surprise](http://surpriselib.com) - 用于构建和分析推荐系统的scikit。
+* [TensorRec](https://github.com/jfkirk/tensorrec) - TensorFlow中的推荐引擎框架 
  
 ## RESTful API
 
 *用于开发RESTful API的库。*
 
 * Django
-    * [django-rest-framework]（http://www.django-rest-framework.org/） - 功能强大且灵活的工具包，用于构建Web API。 --强烈推荐
-    * [django-tastypie]（http://tastypieapi.org/） - 为Django应用程序创建美味的API。 --推荐
+    * [django-rest-framework](http://www.django-rest-framework.org/) - 功能强大且灵活的工具包，用于构建Web API。 --强烈推荐
+    * [django-tastypie](http://tastypieapi.org/) - 为Django应用程序创建美味的API。 --推荐
 * Flask
-    * [eve]（https://github.com/pyeve/eve） - 由Flask，MongoDB提供支持的REST API框架和。  --推荐
-    * [flask-api-utils]（https://github.com/marselester/flask-api-utils） - 负责Flask的API表示和身份验证。
-    * [flask-api]（http://www.flaskapi.org/） - 适用于Flask的Browsable Web API。
-    * [flask-restful]（https://github.com/flask-restful/flask-restful） - 快速构建适用于Flask的REST API。 --推荐
-    * [flask-restless]（https://github.com/jfinkels/flask-restless） - 为使用SQLAlchemy定义的数据库模型生成RESTful API。
+    * [eve](https://github.com/pyeve/eve) - 由Flask，MongoDB提供支持的REST API框架和。  --推荐
+    * [flask-api-utils](https://github.com/marselester/flask-api-utils) - 负责Flask的API表示和身份验证。
+    * [flask-api](http://www.flaskapi.org/) - 适用于Flask的Browsable Web API。
+    * [flask-restful](https://github.com/flask-restful/flask-restful) - 快速构建适用于Flask的REST API。 --推荐
+    * [flask-restless](https://github.com/jfinkels/flask-restless) - 为使用SQLAlchemy定义的数据库模型生成RESTful API。
 *Pyramid 
-    * [cornice]（https://github.com/Cornices/cornice） - Pyramid的RESTful框架。
+    * [cornice](https://github.com/Cornices/cornice) - Pyramid的RESTful框架。
 *其他
-    * [falcon]（http://falconframework.org/） - 一个用于构建云API和Web应用后端的高性能框架。
-    * [hug]（https://github.com/timothycrosley/hug） - 一个Python3框架，用于通过HTTP干净地公开API以及带有自动文档和验证的命令行。 --推荐
-    * [restless]（https://github.com/toastdriven/restless） - 基于从Tastypie学到的经验教训的框架不可知的REST框架。
-    * [ripozo]（https://github.com/vertical-knowledge/ripozo） - 快速创建REST / HATEOAS / Hypermedia API。
-    * [sandman]（https://github.com/jeffknupp/sandman） - 现有数据库驱动系统的自动化REST API。
-    * [apistar]（https://github.com/encode/apistar） - 为Python 3设计的智能Web API框架。--推荐
+    * [falcon](http://falconframework.org/) - 一个用于构建云API和Web应用后端的高性能框架。
+    * [hug](https://github.com/timothycrosley/hug) - 一个Python3框架，用于通过HTTP干净地公开API以及带有自动文档和验证的命令行。 --推荐
+    * [restless](https://github.com/toastdriven/restless) - 基于从Tastypie学到的经验教训的框架不可知的REST框架。
+    * [ripozo](https://github.com/vertical-knowledge/ripozo) - 快速创建REST / HATEOAS / Hypermedia API。
+    * [sandman](https://github.com/jeffknupp/sandman) - 现有数据库驱动系统的自动化REST API。
+    * [apistar](https://github.com/encode/apistar) - 为Python 3设计的智能Web API框架。--推荐
 
 ## RPC服务器(RPC Servers)
 
 * RPC兼容服务器。*
 
-* [SimpleJSONRPCServer]（https://github.com/joshmarshall/jsonrpclib/） - 该库是JSON-RPC规范的实现。
-* [SimpleXMLRPCServer]（https://docs.python.org/3/library/xmlrpc.server.html） - （Python标准库）简单的XML-RPC服务器实现，单线程。
-* [zeroRPC]（https://github.com/0rpc/zerorpcpython） - zerorpc是基于[ZeroMQ]（http://zeromq.org/）和[MessagePack]（http：// msgpack.org/）。  --推荐
+* [SimpleJSONRPCServer](https://github.com/joshmarshall/jsonrpclib/) - 该库是JSON-RPC规范的实现。
+* [SimpleXMLRPCServer](https://docs.python.org/3/library/xmlrpc.server.html) - (Python标准库)简单的XML-RPC服务器实现，单线程。
+* [zeroRPC](https://github.com/0rpc/zerorpcpython) - zerorpc是基于[ZeroMQ](http://zeromq.org/)和[MessagePack](http：// msgpack.org/)。  --推荐
  
  
  
 ＃ 科学(Science)
 
 
-* [astropy]（http://www.astropy.org/） - 用于天文学的社区Python库。
-* [bcbio-nextgen]（https://github.com/chapmanb/bcbio-nextgen） - 为全自动高通量测序分析提供最佳实践管道。
-* [bccb]（https://github.com/chapmanb/bcbb） - 收集与生物分析相关的有用代码。
-* [Biopython]（https://github.com/biopython/biopython） - Biopython是一套免费的生物计算工具。
-* [cclib]（http://cclib.github.io/） - 用于解析和解释计算化学软件包结果的库。
-* [Color]（http://colour-science.org/） - 一种颜色科学软件包，用于实现各种颜色理论转换和算法。
-* [NetworkX]（https://networkx.github.io/） - 适用于复杂网络的高效软件。 
-* [NIPY]（http://nipy.org） - 一套神经影像工具包。 --推荐
-* [NumPy]（http://www.numpy.org/） - 用Python进行科学计算的基础软件包。 --强烈推荐
-* [Open Babel]（http://openbabel.org/wiki/Main_Page） - 一种化学工具箱，专门用于讲述多种化学数据的语言。
-* [ObsPy]（https://github.com/obspy/obspy/wiki/） - 地震学的Python工具箱。
-* [PyDy]（http://www.pydy.org/） - Python Dynamics的缩写，用于协助动态运动建模中的工作流程。
-* [PyMC]（https://github.com/pymc-devs/pymc3） - 马尔可夫链蒙特卡洛采样工具包。
-* [RDKit]（http://www.rdkit.org/） - Cheminformatics和机器学习软件。
-* [SciPy]（https://www.scipy.org/） - 一个基于Python的数学，科学和工程开放源码软件生态系统。 --强烈推荐
-* [statsmodels]（https://github.com/statsmodels/statsmodels） - Python中的统计建模和计量经济学。 --推荐
-* [SymPy]（https://github.com/sympy/sympy） - 符号数学的Python库。
-* [Zipline]（https://github.com/quantopian/zipline） - Pythonic算法交易库。 --推荐
-* [SimPy]（https://bitbucket.org/simpy/simpy） - 基于流程的离散事件仿真框架。 --推荐
+* [astropy](http://www.astropy.org/) - 用于天文学的社区Python库。
+* [bcbio-nextgen](https://github.com/chapmanb/bcbio-nextgen) - 为全自动高通量测序分析提供最佳实践管道。
+* [bccb](https://github.com/chapmanb/bcbb) - 收集与生物分析相关的有用代码。
+* [Biopython](https://github.com/biopython/biopython) - Biopython是一套免费的生物计算工具。
+* [cclib](http://cclib.github.io/) - 用于解析和解释计算化学软件包结果的库。
+* [Color](http://colour-science.org/) - 一种颜色科学软件包，用于实现各种颜色理论转换和算法。
+* [NetworkX](https://networkx.github.io/) - 适用于复杂网络的高效软件。 
+* [NIPY](http://nipy.org) - 一套神经影像工具包。 --推荐
+* [NumPy](http://www.numpy.org/) - 用Python进行科学计算的基础软件包。 --强烈推荐
+* [Open Babel](http://openbabel.org/wiki/Main_Page) - 一种化学工具箱，专门用于讲述多种化学数据的语言。
+* [ObsPy](https://github.com/obspy/obspy/wiki/) - 地震学的Python工具箱。
+* [PyDy](http://www.pydy.org/) - Python Dynamics的缩写，用于协助动态运动建模中的工作流程。
+* [PyMC](https://github.com/pymc-devs/pymc3) - 马尔可夫链蒙特卡洛采样工具包。
+* [RDKit](http://www.rdkit.org/) - Cheminformatics和机器学习软件。
+* [SciPy](https://www.scipy.org/) - 一个基于Python的数学，科学和工程开放源码软件生态系统。 --强烈推荐
+* [statsmodels](https://github.com/statsmodels/statsmodels) - Python中的统计建模和计量经济学。 --推荐
+* [SymPy](https://github.com/sympy/sympy) - 符号数学的Python库。
+* [Zipline](https://github.com/quantopian/zipline) - Pythonic算法交易库。 --推荐
+* [SimPy](https://bitbucket.org/simpy/simpy) - 基于流程的离散事件仿真框架。 --推荐
 
 ## 搜索
 
 *用于索引和执行数据搜索查询的库和软件。*
 
-* [django-haystack]（https://github.com/django-haystack/django-haystack） - Django模块化搜索。
-* [elasticsearch-dsl-py]（https://github.com/elastic/elasticsearch-dsl-py） - Elasticsearch的官方高级Python客户端。
-* [elasticsearch-py]（https://www.elastic.co/guide/en/elasticsearch/client/python-api/current/index.html） - [Elasticsearch]的官方低级Python客户端（https： //www.elastic.co/products/elasticsearch）。
-* [esengine]（https://github.com/seek-ai/esengine） - 用于Python的ElasticSearch ODM（对象文档映射器）。
-* [pysolr]（https://github.com/django-haystack/pysolr） - Apache Solr的轻量级Python包装（包括SolrCloud认知）。
-* [solrpy]（https://github.com/edsu/solrpy） - [solr]的一个Python客户端（http://lucene.apache.org/solr/）。
-* [Whoosh]（http://whoosh.readthedocs.io/en/latest/） - 快速，纯粹的Python搜索引擎库。  --推荐
+* [django-haystack](https://github.com/django-haystack/django-haystack) - Django模块化搜索。
+* [elasticsearch-dsl-py](https://github.com/elastic/elasticsearch-dsl-py) - Elasticsearch的官方高级Python客户端。
+* [elasticsearch-py](https://www.elastic.co/guide/en/elasticsearch/client/python-api/current/index.html) - [Elasticsearch]的官方低级Python客户端(https： //www.elastic.co/products/elasticsearch)。
+* [esengine](https://github.com/seek-ai/esengine) - 用于Python的ElasticSearch ODM(对象文档映射器)。
+* [pysolr](https://github.com/django-haystack/pysolr) - Apache Solr的轻量级Python包装(包括SolrCloud认知)。
+* [solrpy](https://github.com/edsu/solrpy) - [solr]的一个Python客户端(http://lucene.apache.org/solr/)。
+* [Whoosh](http://whoosh.readthedocs.io/en/latest/) - 快速，纯粹的Python搜索引擎库。  --推荐
 
-## 序列化（Serialization）
+## 序列化(Serialization)
 
 *用于序列化复杂数据类型的库*
 
-* [marshmallow]（https://github.com/marshmallow-code/marshmallow） - marshmallow是一个ORM / ODM /框架无关的库，用于将复杂数据类型（如对象）转换为本机Python数据类型和从本地Python数据类型转换。
+* [marshmallow](https://github.com/marshmallow-code/marshmallow) - marshmallow是一个ORM / ODM /框架无关的库，用于将复杂数据类型(如对象)转换为本机Python数据类型和从本地Python数据类型转换。
 
-## 无服务器框架（Serverless Frameworks
+## 无服务器框架(Serverless Frameworks
 
 *用于开发无服务器Python代码的框架。*
 
-* [apex]（https://github.com/apex/apex） - 轻松构建，部署和管理[AWS Lambda]（https://aws.amazon.com/lambda/）功能。 --推荐
-* [python-lambda]（https://github.com/nficano/python-lambda） - 用于在AWS Lambda中开发和部署Python代码的工具包。
-* [Zappa]（https://github.com/Miserlou/Zappa） - AWS Lambda和API网关上部署WSGI应用程序的工具。--推荐
+* [apex](https://github.com/apex/apex) - 轻松构建，部署和管理[AWS Lambda](https://aws.amazon.com/lambda/)功能。 --推荐
+* [python-lambda](https://github.com/nficano/python-lambda) - 用于在AWS Lambda中开发和部署Python代码的工具包。
+* [Zappa](https://github.com/Miserlou/Zappa) - AWS Lambda和API网关上部署WSGI应用程序的工具。--推荐
 
 ## 特殊文本格式处理(Specific Formats Processing)
 
@@ -1372,7 +1372,7 @@ Python版本和环境管理
         
  * XlsxWriter：一个用于创建 Excel .xlsx 文件的 Python 模块。[链接](https://github.com/jmcnamara/XlsxWriter) -- 推荐
         
- * xlwings： Excel 中方便调用 Python 的库（反之亦然），基于 BSD 协议。[链接](https://github.com/zoomeranalytics/xlwings)
+ * xlwings： Excel 中方便调用 Python 的库(反之亦然)，基于 BSD 协议。[链接](https://github.com/zoomeranalytics/xlwings)
         
  * xlwt/xlrd：读写 MS Excel 97/2000/XP/2003 XLS  Excel 文件的数据和格式信息。[链接](https://github.com/python-excel/xlrd)
         
@@ -1416,22 +1416,22 @@ Archive
  
 ## 静态网站生成器(Static Site Generator)
 
-* [Cactus（https://github.com/eudicots/Cactus） - 为设计师设计的静态网站生成器。
-* [Hyde]（http://hyde.github.io/） - 基于Jinja2的静态网站生成器。
-* [Lektor]（https://www.getlektor.com/） - 易于使用的静态CMS和博客引擎。
-* [Nikola]（https://www.getnikola.com/） - 静态网站和博客生成器。
-* [Pelican]（https://blog.getpelican.com/） - 将Markdown或ReST用于内容，Jinja 2用于主题。 支持DVCS，Disqus。AGPL。 --强烈推荐
-* [Tinkerer]（http://tinkerer.me/） - 博客引擎和静态网站生成器，由Sphinx提供支持。 
+* [Cactus(https://github.com/eudicots/Cactus) - 为设计师设计的静态网站生成器。
+* [Hyde](http://hyde.github.io/) - 基于Jinja2的静态网站生成器。
+* [Lektor](https://www.getlektor.com/) - 易于使用的静态CMS和博客引擎。
+* [Nikola](https://www.getnikola.com/) - 静态网站和博客生成器。
+* [Pelican](https://blog.getpelican.com/) - 将Markdown或ReST用于内容，Jinja 2用于主题。 支持DVCS，Disqus。AGPL。 --强烈推荐
+* [Tinkerer](http://tinkerer.me/) - 博客引擎和静态网站生成器，由Sphinx提供支持。 
  
 ## 标签(Tagging)
 
-* [django-taggit]（https://github.com/alex/django-taggit） - 简单Django的标签。 
+* [django-taggit](https://github.com/alex/django-taggit) - 简单Django的标签。 
  
 ## 模板引擎(Template Engine)
 
-* [Genshi]（https://genshi.edgewall.org/） - 用于生成网络感知输出的Python模板工具包。
-* [Jinja2]（https://github.com/pallets/jinja） - 现代和设计友好的模板语言。 -- 推荐
-* [Mako]（http://www.makotemplates.org/） - Python平台的超快速和轻量级模板。
+* [Genshi](https://genshi.edgewall.org/) - 用于生成网络感知输出的Python模板工具包。
+* [Jinja2](https://github.com/pallets/jinja) - 现代和设计友好的模板语言。 -- 推荐
+* [Mako](http://www.makotemplates.org/) - Python平台的超快速和轻量级模板。
  
 
 ## 文本处理(Text Processing)
