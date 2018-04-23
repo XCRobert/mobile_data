@@ -35,6 +35,7 @@ tools目录：
 Table of Contents
 =================
 
+   * [Table of Contents](#table-of-contents)
    * [Python测试开发库](#python测试开发库)
       * [参考资料](#参考资料)
    * [测试开发](#测试开发)
@@ -75,14 +76,9 @@ Table of Contents
       * [数据库驱动(Database Drivers)](#数据库驱动database-drivers)
       * [日期和时间(Date and Time)](#日期和时间date-and-time)
       * [调试工具(Debugging Tools)](#调试工具debugging-tools)
-      * [Deep Learning](#deep-learning)
-      * [图形用户界面(GUI)](#图形用户界面gui)
-         * [关系型数据库](#关系型数据库)
-         * [NoSQL 数据库](#nosql-数据库)
-         * [其他](#其他)
-      * [包管理](#包管理)
-      * [包仓库](#包仓库)
-      * [分发](#分发)
+      * [深度学习(Deep Learning)](#深度学习deep-learning)
+      * [DevOps工具(DevOps Tools)](#devops工具devops-tools)
+      * [分发(Distribution)](#分发distribution)
       * [文档(Documentation)](#文档documentation)
       * [下载器(Downloader)](#下载器downloader)
       * [电子商务(E-commerce)](#电子商务e-commerce)
@@ -93,9 +89,33 @@ Table of Contents
       * [外部函数接口(Foreign Function Interface)](#外部函数接口foreign-function-interface)
       * [表单(Forms)](#表单forms)
       * [函数式编程(Functional Programming)](#函数式编程functional-programming)
+      * [图形用户界面(GUI)](#图形用户界面gui)
+      * [HTML操作(HTML Manipulation)](#html操作html-manipulation)
+      * [HTTP](#http)
+      * [硬件(Hardware)](#硬件hardware)
+      * [图像处理(Image Processing)](#图像处理image-processing)
+      * [实现(Implementations)](#实现implementations)
+      * [交互式Python解释器(Interactive Interpreter)](#交互式python解释器interactive-interpreter)
+      * [国际化](#国际化)
+      * [作业调度(Job Scheduler)](#作业调度job-scheduler)
+      * [日志(Logging)](#日志logging)
+      * [机器学习](#机器学习)
+      * [MapReduce](#mapreduce)
+      * [微软Windows](#微软windows)
+      * [杂项](#杂项)
+      * [自然语言处理(Natural Language Processing)](#自然语言处理natural-language-processing)
+      * [网络虚拟化(Network Virtualization)](#网络虚拟化network-virtualization)
+      * [网络(Networking)](#网络networking)
+         * [动态消息](#动态消息)
+      * [ORM](#orm)
+         * [关系型数据库](#关系型数据库)
+         * [NoSQL 数据库](#nosql-数据库)
+         * [其他](#其他)
       * [包管理(Package Management)](#包管理package-management)
+      * [包仓库](#包仓库)
       * [RESTful API](#restful-api)
       * [RPC服务器(RPC Servers)](#rpc服务器rpc-servers)
+      * [科学(Science)](#科学science)
       * [搜索](#搜索)
       * [序列化(Serialization)](#序列化serialization)
       * [无服务器框架(Serverless Frameworks](#无服务器框架serverless-frameworks)
@@ -124,7 +144,6 @@ Table of Contents
          * [持续更新](#持续更新)
 
 
-
 # Python测试开发库
 
 ## 参考资料
@@ -132,8 +151,6 @@ Table of Contents
 https://github.com/vinta/awesome-python
 
 https://github.com/atinfo/awesome-test-automation
-
-https://github.com/jobbole/awesome-python-cn
 
 https://westurner.github.io/wiki/awesome-python-testing
 
@@ -920,19 +937,19 @@ Python实现的数据库。
 
 * DevOps的软件和库。*
 
-* [Ansible]（https://github.com/ansible/ansible） - 极其简单的IT自动化平台。 --推荐
-* [Cloud-Init]（http://cloudinit.readthedocs.io/en/latest/） - 处理云实例的早期初始化的多分发包。
-* [cuisine]（https://github.com/sebastien/cuisine） - 为 Fabric 提供一系列高级函数。
-* [Docker Compose]（https://github.com/docker/compose） - 使用[Docker]（https://www.docker.com/）的快速隔离开发环境。 --推荐
-* [Fabric]（https://github.com/fabric/fabric/） - 简单的Pythonic远程执行和部署工具。 --推荐
-* [Fabtools]（https://github.com/fabtools/fabtools） - 编写真棒Fabric文件的工具。
-* [honcho]（https://github.com/nickstenning/honcho） - 一个[Foreman]的Python克隆（https://github.com/ddollar/foreman），用于管理基于Procfile的应用程序。
-* [nova]（https://github.com/openstack/nova） - OpenStack计算。 --推荐
-* [swift]（https://github.com/openstack/swift） - OpenStack存储。 --推荐
-* [pexpect]（https://github.com/pexpect/pexpect） - 在像GNU expect这样的伪终端中控制交互式程序。 --强烈推荐
-* [psutil]（https://github.com/giampaolo/psutil） - 跨平台的进行和系统实用程序模块。 --推荐
-* [SaltStack]（https://github.com/saltstack/salt） - 基础设施自动化和管理系统。 --推荐
-* [supervisor]（https://github.com/Supervisor/supervisor） - 用于UNIX的Supervisor进程控制系统。
+* [Ansible](https://github.com/ansible/ansible) - 极其简单的IT自动化平台。 --推荐
+* [Cloud-Init](http://cloudinit.readthedocs.io/en/latest/) - 处理云实例的早期初始化的多分发包。
+* [cuisine](https://github.com/sebastien/cuisine) - 为 Fabric 提供一系列高级函数。
+* [Docker Compose](https://github.com/docker/compose) - 使用[Docker](https://www.docker.com/)的快速隔离开发环境。 --推荐
+* [Fabric](https://github.com/fabric/fabric/) - 简单的Pythonic远程执行和部署工具。 --推荐
+* [Fabtools](https://github.com/fabtools/fabtools) - 编写真棒Fabric文件的工具。
+* [honcho](https://github.com/nickstenning/honcho) - 一个[Foreman]的Python克隆(https://github.com/ddollar/foreman)，用于管理基于Procfile的应用程序。
+* [nova](https://github.com/openstack/nova) - OpenStack计算。 --推荐
+* [swift](https://github.com/openstack/swift) - OpenStack存储。 --推荐
+* [pexpect](https://github.com/pexpect/pexpect) - 在像GNU expect这样的伪终端中控制交互式程序。 --强烈推荐
+* [psutil](https://github.com/giampaolo/psutil) - 跨平台的进行和系统实用程序模块。 --推荐
+* [SaltStack](https://github.com/saltstack/salt) - 基础设施自动化和管理系统。 --推荐
+* [supervisor](https://github.com/Supervisor/supervisor) - 用于UNIX的Supervisor进程控制系统。
 *   gitapi：Git 的纯 Python API。[官网](https://bitbucket.org/haard/gitapi)
 *   hgapi：Mercurial 的纯 Python API。[官网](https://bitbucket.org/haard/hgapi)
 *   honcho：[Foreman](https://github.com/ddollar/foreman) 的 Python 克隆版，用来管理基于 [Procfile](https://devcenter.heroku.com/articles/procfile) 的应用。[官网](https://github.com/nickstenning/honcho)
@@ -1164,41 +1181,41 @@ Python版本和环境管理
 ##游戏开发(Game Development)
 
 
-* [Cocos2d]（https://github.com/los-cocos/cocos） - cocos2d是用于构建2D游戏，演示和其他图形/交互式应用程序的框架。它基于pyglet。
-* [Panda3D]（https://www.panda3d.org/） - 由迪士尼开发并由卡内基梅隆娱乐技术中心维护的3D游戏引擎。用C ++编写，完全用Python包装。 -推荐
-* [Pygame]（http://www.pygame.org/news.html） - Pygame是一套用于编写游戏的Python模块。  -推荐
-* [PyOgre]（http://www.ogre3d.org/tikiwiki/PyOgre） - Ogre 3D渲染引擎的Python绑定，可用于游戏，模拟，任何3D。
-* [PyOpenGL]（http://pyopengl.sourceforge.net/） - 用于OpenGL的Python ctypes绑定及其相关的API。
-* [PySDL2]（http://pysdl2.readthedocs.io/en/rel_0_9_5/） - SDL2库的基于ctypes的包装器。
-* [RenPy]（https://github.com/renpy/renpy） - Visual Novel引擎。
+* [Cocos2d](https://github.com/los-cocos/cocos) - cocos2d是用于构建2D游戏，演示和其他图形/交互式应用程序的框架。它基于pyglet。
+* [Panda3D](https://www.panda3d.org/) - 由迪士尼开发并由卡内基梅隆娱乐技术中心维护的3D游戏引擎。用C ++编写，完全用Python包装。 -推荐
+* [Pygame](http://www.pygame.org/news.html) - Pygame是一套用于编写游戏的Python模块。  -推荐
+* [PyOgre](http://www.ogre3d.org/tikiwiki/PyOgre) - Ogre 3D渲染引擎的Python绑定，可用于游戏，模拟，任何3D。
+* [PyOpenGL](http://pyopengl.sourceforge.net/) - 用于OpenGL的Python ctypes绑定及其相关的API。
+* [PySDL2](http://pysdl2.readthedocs.io/en/rel_0_9_5/) - SDL2库的基于ctypes的包装器。
+* [RenPy](https://github.com/renpy/renpy) - Visual Novel引擎。
 
 ##地理位置(Geolocation)
 
 *地理编码地址和纬度和经度的图书馆。*
 
-* [django-countries]（https://github.com/SmileyChris/django-countries） - Django应用程序，提供与表单一起使用的国家选项，标志图标静态文件和模型的国家/地区字段。
-* [GeoDjango]（https://docs.djangoproject.com/en/dev/ref/contrib/gis/） - 世界级的地理网络框架。  -推荐
-* [GeoIP]（https://github.com/maxmind/geoip-api-python） - MaxMind GeoIP遗留数据库的Python API。
-* [geojson]（https://github.com/frewsxcv/python-geojson） - GeoJSON的Python绑定和实用程序。
-* [geopy]（https://github.com/geopy/geopy） - Python地理编码工具箱。
-* [pygeoip]（https://github.com/appliedsec/pygeoip） - 纯Python GeoIP API。
+* [django-countries](https://github.com/SmileyChris/django-countries) - Django应用程序，提供与表单一起使用的国家选项，标志图标静态文件和模型的国家/地区字段。
+* [GeoDjango](https://docs.djangoproject.com/en/dev/ref/contrib/gis/) - 世界级的地理网络框架。  -推荐
+* [GeoIP](https://github.com/maxmind/geoip-api-python) - MaxMind GeoIP遗留数据库的Python API。
+* [geojson](https://github.com/frewsxcv/python-geojson) - GeoJSON的Python绑定和实用程序。
+* [geopy](https://github.com/geopy/geopy) - Python地理编码工具箱。
+* [pygeoip](https://github.com/appliedsec/pygeoip) - 纯Python GeoIP API。
 
 ## HTML操作(HTML Manipulation)
 
 *用于处理HTML和XML的库。*
 
-* [BeautifulSoup]（https://www.crummy.com/software/BeautifulSoup/bs4/doc/） - Python风格的方式来对HTML或XML进行迭代，搜索和修改。 -推荐
-* [bleach]（https://github.com/mozilla/bleach） - 基于白名单的HTML清理和文本链接库。
-* [cssutils]（https://pypi.python.org/pypi/cssutils/） - Python的CSS库。
-* [html5lib]（https://github.com/html5lib/html5lib-python） - 用于解析和序列化HTML文档和片段的符合标准的库。
-* [lxml]（http://lxml.de/） - 用于处理HTML和XML的非常快速，易于使用和多功能的库。  -推荐
-* [MarkupSafe]（https://github.com/pallets/markupsafe） - 为Python实现XML / HTML / XHTML标记安全字符串。
-* [pyquery]（https://github.com/gawel/pyquery） - 用于解析HTML的jQuery类库。
-* [untangle]（https://github.com/stchris/untangle） - 将XML文档转换为Python对象以便于访问。
-* [WeasyPrint]（https://github.com/Kozea/WeasyPrint） - 可导出为PDF的HTML和CSS可视化呈现引擎。
-* [xmldataset]（https://xmldataset.readthedocs.io/en/latest/） - 简单的XML解析。
+* [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) - Python风格的方式来对HTML或XML进行迭代，搜索和修改。 -推荐
+* [bleach](https://github.com/mozilla/bleach) - 基于白名单的HTML清理和文本链接库。
+* [cssutils](https://pypi.python.org/pypi/cssutils/) - Python的CSS库。
+* [html5lib](https://github.com/html5lib/html5lib-python) - 用于解析和序列化HTML文档和片段的符合标准的库。
+* [lxml](http://lxml.de/) - 用于处理HTML和XML的非常快速，易于使用和多功能的库。  -推荐
+* [MarkupSafe](https://github.com/pallets/markupsafe) - 为Python实现XML / HTML / XHTML标记安全字符串。
+* [pyquery](https://github.com/gawel/pyquery) - 用于解析HTML的jQuery类库。
+* [untangle](https://github.com/stchris/untangle) - 将XML文档转换为Python对象以便于访问。
+* [WeasyPrint](https://github.com/Kozea/WeasyPrint) - 可导出为PDF的HTML和CSS可视化呈现引擎。
+* [xmldataset](https://xmldataset.readthedocs.io/en/latest/) - 简单的XML解析。
 *   xhtml2pdf：HTML/CSS 转 PDF 工具。[官网](https://github.com/xhtml2pdf/xhtml2pdf)
-* [xmltodict]（https://github.com/martinblech/xmltodict） - 像处理 JSON 一样处理 XML。
+* [xmltodict](https://github.com/martinblech/xmltodict) - 像处理 JSON 一样处理 XML。
 
 ## HTTP
 
@@ -1214,13 +1231,13 @@ Python版本和环境管理
 
 *用于硬件编程的库。*
 
-* [ino]（http://inotool.org/） - 用于[Arduino]（https://www.arduino.cc/）的命令行工具包。
-* [keyboard]（https://github.com/boppreh/keyboard） - 钩和模拟Windows和Linux上的全球键盘事件。
-* [鼠标]（https://github.com/boppreh/mouse） - 在Windows和Linux上挂钩并模拟全局鼠标事件。
-* [Pingo]（https://github.com/pingo-io/pingo-py） - Pingo提供统一的API来编程像Raspberry Pi，pcDuino，Intel Galileo等设备。
-* [PyUserInput]（https://github.com/SavinaRoja/PyUserInput） - 用于跨平台控制鼠标和键盘的模块。
-* [scapy]（https://github.com/secdev/scapy） - 出色的数据包操作库。
-* [wifi]（https://github.com/rockymeza/wifi） - 用于在Linux上使用WiFi的Python库和命令行工具。
+* [ino](http://inotool.org/) - 用于[Arduino](https://www.arduino.cc/)的命令行工具包。
+* [keyboard](https://github.com/boppreh/keyboard) - 钩和模拟Windows和Linux上的全球键盘事件。
+* [鼠标](https://github.com/boppreh/mouse) - 在Windows和Linux上挂钩并模拟全局鼠标事件。
+* [Pingo](https://github.com/pingo-io/pingo-py) - Pingo提供统一的API来编程像Raspberry Pi，pcDuino，Intel Galileo等设备。
+* [PyUserInput](https://github.com/SavinaRoja/PyUserInput) - 用于跨平台控制鼠标和键盘的模块。
+* [scapy](https://github.com/secdev/scapy) - 出色的数据包操作库。
+* [wifi](https://github.com/rockymeza/wifi) - 用于在Linux上使用WiFi的Python库和命令行工具。
 *   Pyro：Python 机器人编程库。[官网](http://pyrorobotics.com/)
 *   PyUserInput：跨平台的，控制鼠标和键盘的模块。[官网](https://github.com/SavinaRoja/PyUserInput)
 
@@ -1238,72 +1255,154 @@ Python版本和环境管理
 *   pygram：类似 Instagram 的图像滤镜。[官网](https://github.com/ajkumar25/pygram)
 *   python-qrcode：纯 Python 实现的二维码生成器。[官网](https://github.com/lincolnloop/python-qrcode) --推荐
 *   Quads：基于四叉树的计算机艺术。[官网](https://github.com/fogleman/Quads)
-*   scikit-image：一个用于（科学）图像处理的 Python 库。[官网](http://scikit-image.org/) --推荐
+*   scikit-image：一个用于(科学)图像处理的 Python 库。[官网](http://scikit-image.org/) --推荐
 *   thumbor：小型图像服务，具有剪裁，尺寸重设和翻转功能。[官网](https://github.com/thumbor/thumbor) --推荐
 *   wand：[MagickWand](http://www.imagemagick.org/script/magick-wand.php)的 Python 绑定。MagickWand 是 ImageMagick 的 C API 。[官网](https://github.com/dahlia/wand)
 *   face_recognition：简单易用的 python 人脸识别库。[官网](https://github.com/ageitgey/face_recognition)
-*  [pagan]（https://github.com/daboth/pagan） - 基于输入字符串和散列的复古identicon（阿凡达）生成。
+*  [pagan](https://github.com/daboth/pagan) - 基于输入字符串和散列的复古identicon(阿凡达)生成。
 
 ## 实现(Implementations)
 
 * Python的实现。*
 
-* [CLPython]（https://github.com/metawilm/cl-python） - 实现用Common Lisp编写的Python编程语言。
-* [CPython]（https://github.com/python/cpython） - **用C编写的Python编程语言的默认，最广泛使用的实现。**
-* [Cython]（http://cython.org/） - 优化Python的静态编译器。使用类型mixin将Python编译为C或C ++模块，从而获得巨大的性能提升
-* [脾气暴躁]（https://github.com/google/grumpy） - 更多的编译器比解释器更强大的CPython2.7替换（alpha）。
-* [IronPython]（https://github.com/IronLanguages/ironpython3） - 实现用C＃编写的面向.NET Framework和Mono的Python编程语言。
-* [Jython]（https://hg.python.org/jython） - 为Java虚拟机（JVM）实现用Java编写的Python编程语言。
-* [MicroPython]（https://github.com/micropython/micropython） - MicroPython - 精简高效的Python编程语言实现，用于微控制器和受限制的系统
-* [Numba]（http://numba.pydata.org/） - 针对科学Python的LLVM的Python JIT编译器。
-* [PeachPy]（https://github.com/Maratyszcza/PeachPy） - 嵌入在Python中的x86-64汇编程序。可以用作Python的内联汇编程序，也可以用作Windows，Linux，OS X，Native Client和Go的独立汇编程序。
-* [Pyjion]（https://github.com/Microsoft/Pyjion） - 基于CoreCLR的Python JIT。
-* [PyPy]（https://bitbucket.org/pypy/pypy） - 实现用RPython编写并编译为C的Python编程语言.PyPy关注速度，效率以及与原始CPython解释器的兼容性。解释器使用黑魔法使Python非常快速，而无需添加额外的类型信息。
-* [PySec]（https://github.com/ebranca/owasp-pysec） - python的强化版本，使安全专业人员和开发人员可以更轻松地编写应用程序，从而更有弹性地处理攻击和操作。
-* [Pyston]（https://github.com/dropbox/pyston） - 使用LLVM和现代JIT技术构建的Python实现，其目标是实现良好的性能。
-* [Stackless Python]（https://bitbucket.org/stackless-dev/stackless/wiki/Home） - Python编程语言的增强版本，它允许程序员在没有性能和复杂性的情况下获得基于线程编程的好处与传统线程相关的问题。
+* [CLPython](https://github.com/metawilm/cl-python) - 用Common Lisp编写的Python编程语言。
+* [CPython](https://github.com/python/cpython) - **用C编写的Python编程语言的默认，最广泛使用的实现。**  --强烈推荐
+* [Cython](http://cython.org/) - 优化Python的静态编译器。使用类型mixin将Python编译为C或C ++模块，从而获得巨大的性能提升 --强烈推荐
+* [Grumpy](https://github.com/google/grumpy) - 更多的编译器比解释器更强大的CPython2.7替换(alpha)。 --推荐
+* [IronPython](https://github.com/IronLanguages/ironpython3) - 实现用C＃编写的面向.NET Framework和Mono的Python编程语言。 --推荐
+* [Jython](https://hg.python.org/jython) - 为Java虚拟机(JVM)实现用Java编写的Python编程语言。 --推荐
+* [MicroPython](https://github.com/micropython/micropython) - MicroPython - 精简高效的Python编程语言实现，用于微控制器和受限制的系统 --推荐
+* [Numba](https://github.com/numba/numba/) - 针对科学Python的LLVM的Python JIT编译器。 --推荐
+* [PeachPy](https://github.com/Maratyszcza/PeachPy) - 嵌入在Python中的x86-64汇编程序。可以用作Python的内联汇编程序，也可以用作Windows，Linux，OS X，Native Client和Go的独立汇编程序。 --推荐
+* [Pyjion](https://github.com/Microsoft/Pyjion) - 基于CoreCLR的Python JIT。
+* [PyPy](https://bitbucket.org/pypy/pypy) - 实现用RPython编写并编译为C的Python编程语言.PyPy关注速度，效率以及与原始CPython解释器的兼容性。解释器使用黑魔法使Python非常快速，而无需添加额外的类型信息。 --强烈推荐
+* [PySec](https://github.com/ebranca/owasp-pysec) - python的强化版本，使安全专业人员和开发人员可以更轻松地编写应用程序，从而更有弹性地处理攻击和操作。
+* [Pyston](https://github.com/dropbox/pyston) - 使用LLVM和现代JIT技术构建的Python实现，其目标是实现良好的性能。 --推荐
+* [Stackless Python](https://bitbucket.org/stackless-dev/stackless/wiki/Home) - Python编程语言的增强版本，它允许程序员在没有性能和复杂性的情况下获得基于线程编程的好处与传统线程相关的问题。 --推荐
 
-##互动翻译
+## 交互式Python解释器(Interactive Interpreter)
 
-*交互式Python解释器（REPL）。*
+* [bpython](https://github.com/bpython/bpython) - 界面丰富的 Python 解析器。
+* [IPython](https://github.com/ipython/ipython) - 功能丰富的工具，非常有效的使用交互式Python。 --强烈推荐
+* [Jupyter Notebook](https://github.com/jupyter/jupyter) - 功能丰富的工具，非常有效的使用交互式Python。 --推荐
+* [ptpython](https://github.com/jonathanslenders/ptpython) - 在[python-prompt-toolkit]之上构建的高级Python REPL(https://github.com/jonathanslenders/python-prompt-toolkit) 。 --推荐
 
-* [bpython]（https://github.com/bpython/bpython） - Python解释器的一个奇妙界面。
-* [Jupyter Notebook（IPython）]（https://jupyter.org） - 一个丰富的工具包，可帮助您充分利用交互式Python。
-* [ptpython]（https://github.com/jonathanslenders/ptpython） - 在[python-prompt-toolkit]之上构建的高级Python REPL（https://github.com/jonathanslenders/python-prompt-toolkit） 。
-
-##国际化
+## 国际化
 
 *与i18n合作的图书馆*
 
-* [Babel]（http://babel.pocoo.org/en/latest/） - 一个Python国际化库。
-* [PyICU]（https://github.com/ovalhub/pyicu） - Unicode C ++库的国际组件封装（[ICU]（http://site.icu-project.org/））。
+* [Babel](https://github.com/python-babel/babel) - Python国际化库。
+* [PyICU](https://github.com/ovalhub/pyicu) - Unicode C ++库的国际组件封装([ICU](http://site.icu-project.org/))。
 
-## Job Scheduler
+## 作业调度(Job Scheduler)
 
 *用于调度作业的库。*
 
-* [APScheduler]（http://apscheduler.readthedocs.io/en/latest/） - 轻量但功能强大的进程内任务调度程序，可让您安排功能。
-* [django-schedule]（https://github.com/thauber/django-schedule） - Django的日历应用程序。
-* [doit]（http://pydoit.org/） - 一个任务运行者和构建工具。
-* [gunnery]（https://github.com/gunnery/gunnery） - 具有基于Web界面的分布式系统的多用途任务执行工具。
-* [Joblib]（http://pythonhosted.org/joblib/index.html） - 一组用Python提供轻量级流水线的工具。
-* [计划]（https://github.com/fengsp/plan） - 用Python编写crontab文件就像一个魅力一样。
-* [schedule]（https://github.com/dbader/schedule） - 为人类进行Python作业调度。
-* [Spiff]（https://github.com/knipknap/SpiffWorkflow） - 以纯Python实现的强大的工作流引擎。
-* [TaskFlow]（https://docs.openstack.org/developer/taskflow/） - 一个Python库，可帮助您轻松，一致和可靠地执行任务。
+* [APScheduler](https://github.com/agronholm/apscheduler) - 轻量但功能强大的进程内任务调度程序，可让您安排功能。
+* [django-schedule](https://github.com/thauber/django-schedule) - Django的日历应用程序。
+* [doit](http://pydoit.org/) - 任务运行者和构建工具。
+* [gunnery](https://github.com/gunnery/gunnery) - 具有基于Web界面的分布式系统的多用途任务执行工具。
+* [Joblib](http://pythonhosted.org/joblib/index.html) - 一组用Python提供轻量级流水线的工具。
+* [plan](https://github.com/fengsp/plan) - 用Python编写crontab文件就像一个魅力一样。
+* [schedule](https://github.com/dbader/schedule) - 人性化的 Python 任务调度库。 --推荐
+* [Spiff](https://github.com/knipknap/SpiffWorkflow) - 以纯Python实现的强大的工作流引擎。
+* [TaskFlow](https://github.com/openstack/taskflow) - 可以让你方便执行任务的 Python 库，一致并且可靠。
+*  AirFlow：Airflow 是Airbnb公司开源的，是一个工作流分配管理系统，通过有向非循环图的方式管理任务流程，设置任务依赖关系和时间调度。[官方](https://github.com/apache/incubator-airflow)
 
-##记录
+## 日志(Logging)
 
 *用于生成和处理日志的库。*
 
-* [Eliot]（https://github.com/ScatterHQ/eliot） - 记录复杂和分布式系统。
-* [日志]（http://logbook.readthedocs.io/en/stable/） - 记录Python的替代品。
-* [日志记录]（https://docs.python.org/2/library/logging.html） - （Python标准库）Python的日志工具。
-* [raven]（https://github.com/getsentry/raven-python） - Sentry的Python客户端，用于Web应用程序的日志/错误跟踪，崩溃报告和聚合平台。
+* [Eliot](https://github.com/ScatterHQ/eliot) - 复杂和分布式系统日志。
+* [logbook](https://github.com/getlogbook/logbook) - 记录Python的替代品。
+* [logging](https://docs.python.org/2/library/logging.html) - (Python标准库)Python的日志工具。 --推荐
+* [raven](https://github.com/getsentry/raven-python) - Sentry的Python客户端，用于Web应用程序的日志/错误跟踪，崩溃报告和聚合平台。
 
-##机器学习
+## 机器学习
 
-*机器学习库。请参阅：[awesome-machine-learning]（https://github.com/josephmisiti/awesome-machine-learning#python）。*
+*机器学习库。请参阅：[awesome-machine-learning](https://github.com/josephmisiti/awesome-machine-learning#python)。*
+
+* [Metrics](https://github.com/benhamner/Metrics) - 机器学习评估指标。
+* [NuPIC](https://github.com/numenta/nupic) - 用于智能计算的Numenta平台。 --推荐
+* [scikit-learn](http://scikit-learn.org/) - 流行的机器学习Python库。 --推荐
+* [Spark ML](http://spark.apache.org/docs/latest/ml-guide.html) - [Apache Spark](http://spark.apache.org/)的可扩展机器学习库。--推荐
+* [vowpal_porpoise](https://github.com/josephreisinger/vowpal_porpoise) - 用于[Vowpal Wabbit]的轻量级Python包装器(https://github.com/JohnLangford/vowpal_wabbit/)。
+* [xgboost](https://github.com/dmlc/xgboost) - 可扩展，可移植且分布式的渐变增强库。 --推荐
+
+## MapReduce
+
+* MapReduce的框架和库。*
+
+* [PySpark](https://github.com/apache/spark) - Apache Spark Python API。
+*   [dpark](http://hao.jobbole.com/dpark/)：Spark 的 Python 克隆版，类似 MapReduce 的框架。[官网](https://github.com/douban/dpark)
+*  dumbo：这个 Python 模块可以让人轻松的编写和运行 Hadoop 程序。[官网](https://github.com/klbostee/dumbo)
+* [luigi](https://github.com/spotify/luigi) - 可帮助您构建批处理作业复杂管道的模块。
+* [mrjob](https://github.com/Yelp/mrjob) - 在Hadoop或Amazon Web Services上运行MapReduce作业。
+* [streamparse](https://github.com/Parsely/streamparse) - 针对实时数据流运行Python代码。与[Apache Storm](http://storm.apache.org/)集成。
+* [dask](https://github.com/dask/dask) - 灵活的分析计算并行计算库。
+
+## 微软Windows
+
+* Microsoft Windows上的Python编程。*
+
+* [Python(x，y)](http://python-xy.github.io/) - 基于Qt和Spyder的面向科学应用的Python发行版。 --推荐
+* [pythonlibs](http://www.lfd.uci.edu/~gohlke/pythonlibs/) - Python扩展包的非官方Windows二进制文件。 --推荐
+* [PythonNet](https://github.com/pythonnet/pythonnet) - .NET公共语言运行时(CLR)的Python集成。
+* [PyWin32](https://sourceforge.net/projects/pywin32/) - Python的Windows扩展。 --推荐
+* [WinPython](https://winpython.github.io/) - Windows 7/8的便携式开发环境。 --推荐
+
+## 杂项
+
+*不适合上述类别的有用库或工具。*
+
+*   blinker：快速的 Python 进程内信号/事件分发系统。[官网](https://github.com/jek/blinker)
+*   itsdangerous：一系列辅助工具用来将可信的数据传入不可信的环境。[官网](https://github.com/pallets/itsdangerous)
+*   pluginbase：一个简单但是非常灵活的 Python 插件系统。[官网](https://github.com/mitsuhiko/pluginbase)
+*   Pychievements：一个用来创建和追踪成就的 Python 框架。[官网](https://github.com/PacketPerception/pychievements)
+*   [Tryton](http://hao.jobbole.com/tryton/)：通用商务框架。[官网](http://www.tryton.org/)
+
+## 自然语言处理(Natural Language Processing)
+
+*   NLTK：构建Python程序以处理人类语言数据的领先平台。[连接](https://github.com/nltk/nltk) - 推荐
+*   jieba：中文分词工具。[官网](https://github.com/fxsjy/jieba) - 推荐
+*   langid.py：独立的语言识别系统。[官网](https://github.com/saffsd/langid.py)
+*   Pattern：Python 网络信息挖掘模块。[官网](https://github.com/clips/pattern) - 推荐
+*   SnowNLP：用来处理中文文本的库。[官网](https://github.com/isnowfy/snownlp) - 推荐
+*   TextBlob：为进行普通自然语言处理任务提供一致的 API。[官网](http://textblob.readthedocs.org/en/latest/) - 推荐
+*   TextGrocery：一简单高效的短文本分类工具，基于 LibLinear 和 Jieba。[官网](https://github.com/2shou/TextGrocery)
+*   thulac:清华大学自然语言处理与社会人文计算实验室研制推出的一套中文词法分析工具包[官网](https://github.com/thunlp/THULAC-Python)
+* [gensim](https://github.com/RaRe-Technologies/gensim) -人 性化的话题建模库。
+* [spaCy](https://github.com/explosion/spaCy) - 用于Python和Cython的工业强度自然语言处理的库。 -推荐
+
+## 网络虚拟化(Network Virtualization)
+
+*用于虚拟网络和SDN(软件定义网络)的工具和库。*
+
+*   Mininet：流行的网络模拟器以及用 Python 编写的 API。[官网](http://mininet.org/) -推荐
+*   POX：一个针对基于 Python 的软件定义网络应用(例如 OpenFlow SDN 控制器)的开源开发平台。[官网](https://github.com/noxrepo/pox)
+*   Pyretic：火热的 SDN 编程语言中的一员，为网络交换机和模拟器提供强大的抽象能力。[官网](https://github.com/frenetic-lang/pyretic)
+*   SDX Platform：基于 SDN 的 IXP 实现，影响了 Mininet, POX 和 Pyretic。[官网](https://github.com/sdn-ixp/internet2award)
+*   NRU：一个基于组件的软件定义网络框架。[官网](http://ryu.readthedocs.io/en/latest/)
+
+## 网络(Networking)
+
+用于网络编程的库。
+
+*   asyncio：(Python 标准库) 异步 I/O, 事件循环, 协程以及任务。[官网](https://docs.python.org/3/library/asyncio.html) -推荐
+*   [Twisted](https://github.com/twisted/twisted)：一个事件驱动的网络引擎。[官网](https://twistedmatrix.com/trac/) -推荐
+*   pulsar：事件驱动的并发框架。[官网](https://github.com/quantmind/pulsar)
+*   diesel：基于 Greenlet 的事件 I/O 框架。[官网](https://github.com/dieseldev/diesel)
+*   pyzmq：ZeroMQ 消息库的 Python 封装。[官网](http://zeromq.github.io/pyzmq/)
+*   Toapi：轻巧，简单，快速的 Flask 库，致力于为所有网站提供 API 服务。[官网](https://github.com/gaojiuli/toapi) -推荐
+*   txZMQ：基于 Twisted 的 ZeroMQ 消息库的 Python 封装。[官网](https://github.com/smira/txZMQ)
+* [NAPALM](https://github.com/napalm-automation/napalm) - 用于操纵网络设备的跨供应商API。
+
+### 动态消息
+
+用来创建用户活动的库。
+
+*   django-activity-stream：从你的站点行为中生成通用活动信息流。[官网](https://github.com/justquick/django-activity-stream)
+*   Stream-Framework：使用 Cassandra 和 Redis 创建动态消息和通知系统。[官网](https://github.com/tschellenbach/Stream-Framework) -推荐
 
 
 ## ORM
@@ -1345,20 +1444,19 @@ Python版本和环境管理
  * dataset ：基于JSON的数据库。[链接](https://github.com/pudo/dataset)
 
 
-## 包管理
+## 包管理(Package Management)
 
-管理包和依赖的工具。
+管理包和依赖
 
+ * pip：管理包和依赖。[链接](https://github.com/pypa/pip/) [pypi](https://pypi.python.org/pypi) --强烈推荐
 
- * pip：Python 包和依赖关系管理工具。[链接](https://pypi.python.org/pypi)
-
- * pip-tools：保证 Python 包依赖关系更新的一组工具。[链接]https://github.com/jazzband/pip-tools)
-
- * conda：跨平台，Python 二进制包管理工具。[链接](https://github.com/conda/conda/)
+ * conda：跨平台，Python 二进制包管理工具。[链接](https://github.com/conda/conda/) --强烈推荐
 
  * Curdling：管理 Python 包的命令行工具。[链接](https://github.com/clarete/curdling)
 
- * wheel：Python 分发的新标准，意在取代 eggs。[链接](https://github.com/meshy/pythonwheels)
+ * pip-tools：保证 Python 包依赖关系更新的工具。[链接](https://github.com/jazzband/pip-tools)
+
+ * wheel：Python 分发的新标准，意在取代 eggs。[链接](https://github.com/meshy/pythonwheels) --强烈推荐
 
 
 ## 包仓库
@@ -1375,30 +1473,8 @@ Python版本和环境管理
 
  * localshop：本地 PyPI 服务(自定义包并且自动对 PyPI 镜像)。[链接](https://github.com/mvantellingen/localshop)
 
-
-
-
-
-
-
  
 
-
-
- 
-## 包管理(Package Management)
-
-管理包和依赖
-
- * pip：管理包和依赖。[链接](https://github.com/pypa/pip/) [pypi](https://pypi.python.org/pypi) --强烈推荐
-
- * conda：跨平台，Python 二进制包管理工具。[链接](https://github.com/conda/conda/) --强烈推荐
-
- * Curdling：管理 Python 包的命令行工具。[链接](https://github.com/clarete/curdling)
-
- * pip-tools：保证 Python 包依赖关系更新的工具。[链接](https://github.com/jazzband/pip-tools)
-
- * wheel：Python 分发的新标准，意在取代 eggs。[链接](https://github.com/meshy/pythonwheels) --强烈推荐
 
 ##权限(Permissions)
 
