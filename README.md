@@ -660,7 +660,7 @@ django-viewlet因为github星级太少而未收录
 
  * asyncio - (Python 标准库) 异步 I/O, 事件循环, 协程以及任务 [链接](https://docs.python.org/3/library/asyncio.html)　--推荐
 
- * aiohttp 异步http client/server框架(asyncio) [链接](https://github.com/aio-libs/aiohttp)　--推荐
+ * aiohttp 异步http client/server框架(asyncio) [链接](https://github.com/aio-libs/aiohttp) --推荐
 
  * curio 协程并发库. [链接](https://github.com/dabeaz/curio)
 
@@ -902,7 +902,7 @@ Python实现的数据库。
 
   * python-statsd：statsd 服务器的 Python 客户端。[链接]() 
 
-## Deep Learning
+## 深度学习(Deep Learning)
 
 机器学习库。 参见:[awesome-deep-learning](https://github.com/ChristosChristofidis/awesome-deep-learning).*
 
@@ -914,130 +914,46 @@ Python实现的数据库。
 * [Serpent.AI](https://github.com/SerpentAI/SerpentAI) - 游戏代理框架。 使用任何视频游戏作为深度学习沙盒。 --推荐
 * [TensorFlow](https://github.com/tensorflow/tensorflow) - 由Google创建的最受欢迎的深度学习框架。 --强烈推荐
 * [Theano](https://github.com/Theano/Theano) - 用于快速数值计算的库.  --推荐
-  
-  
-Caffe - 一个快速开放的深度学习框架..
-     Keras - 高级神经网络库，能够在TensorFlow或Theano之上运行。
-     MXNet - 为提高效率和灵活性而设计的深度学习框架。
-     Neupy - 运行和测试不同的人工神经网络算法。
-     Pytorch - Python中的张量和动态神经网络，具有强大的GPU加速功能。
-     Serpent.AI - 游戏代理框架。 使用任何视频游戏作为深度学习沙盒。
-     TensorFlow - 由Google创建的最受欢迎的深度学习框架。
-     Theano - 用于快速数值计算的库。  
-
-##动态消息
-
-用来创建用户活动的库。
-
- * django-activity-stream：从你的站点行为中生成通用活动信息流。[链接](https://github.com/justquick/django-activity-stream)
-
- * Stream-Framework：使用 Cassandra 和 Redis 创建动态消息和通知系统。[链接](https://github.com/tschellenbach/Stream-Framework)
-
-## 图形用户界面(GUI)
 
 
- * curses：内置的ncurses 封装，用来创建终端图形用户界面。标准库。[链接](https://docs.python.org/3/library/curses.html) 
- * Eel - 用于制作简单电子类离线HTML / JS GUI应用程序的小程序库。[链接](https://github.com/ChrisKnott/Eel) 
- * enaml：使用类似 QML 的 Declaratic 语法来创建美观的用户界面。[链接](https://github.com/nucleic/enaml)
- * kivy：创建NUI应用程序的库，可以运行在 Windows, Linux, Mac OS X, Android 以及 iOS 平台上。[链接](https://github.com/kivy/kivy) -推荐
- * pyglet：Python 的跨平台窗口及多媒体库。[链接](https://bitbucket.org/pyglet/)
- * PyQt：跨平台用户界面框架 Qt 的 Python 绑定 ，支持 Qt v4 和 Qt v5。[链接](https://riverbankcomputing.com/software/pyqt/intro)
- * PySide：跨平台用户界面框架 Qt 的 Python 绑定 ，支持 Qt v4。[链接](https://wiki.qt.io/PySide)
- * Tkinter：Python GUI 标准库。[链接](https://wiki.python.org/moin/TkInter)
- * Toga：Python 原生的, 操作系统原生的 GUI 工具包。[链接](https://github.com/pybee/toga)
- * urwid：创建终端 GUI 应用的库，支持组件，事件和丰富的色彩等。[链接](https://github.com/urwid/urwid)
- * wxPython：wxPython 是 wxWidgets C++ 类库和 Python 语言混合的产物。[链接](https://github.com/wxWidgets/Phoenix/)
- * PyGObject：GLib/GObject/GIO/GTK+ (GTK+3) 的 Python 绑定。[链接](https://wiki.gnome.org/Projects/PyGObject)
- * Flexx：纯 Python编写的用来创建 GUI 程序的工具集，它使用 web 技术进行界面的展示。[链接](https://github.com/flexxui/flexx) 
+## DevOps工具(DevOps Tools)
 
-##　ORM
+* DevOps的软件和库。*
 
-实现对象关系映射或数据映射技术的库。
-
-### 关系型数据库
-
- * Django Models：Django 的一部分。[链接](https://docs.djangoproject.com/en/dev/topics/db/models/)
-
- * SQLAlchemy：Python SQL 工具以及对象关系映射工具。[链接](http://www.sqlalchemy.org/)
-
- * awesome-sqlalchemy系列 [链接](https://github.com/justquick/django-activity-stream)
-
- * Peewee：一个小巧，富有表达力的 ORM, 支持postgresql, mysql and sqlite。[链接]https://github.com/coleifer/peewee)
-
- * PonyORM：提供面向生成器的 SQL 接口的 ORM。[链接](https://github.com/ponyorm/pony/)
-
- * python-sql：编写 Python 风格的 SQL 查询。[链接](http://python-sql.tryton.org/)
-
-### NoSQL 数据库
-
- * django-mongodb-engine：Django MongoDB 后端。[链接](https://github.com/django-nonrel/mongodb-engine)
-
- * PynamoDB：Amazon DynamoDB 的一个 Python 风格接口。[链接](https://aws.amazon.com/cn/dynamodb/)
-
- * flywheel：Amazon DynamoDB 的对象映射工具。[链接](https://github.com/stevearc/flywheel)
-
- * MongoEngine：Python 对象文档映射工具，用于 MongoDB。[链接](https://github.com/MongoEngine/mongoengine)
-
- * hot-redis：为 Redis 提供 Python 丰富的数据类型。[链接](https://github.com/stephenmcd/hot-redis)
-
- * redisco：一个 Python 库，提供可以持续存在在 Redis 中的简单模型和容器。[链接](https://github.com/kiddouk/redisco)
-
-### 其他
-
- * butterdb：Google Drive 电子表格的 Python ORM。[链接](https://github.com/terrible-ideas/butterdb)
-
- * dataset ：基于JSON的数据库。[链接](https://github.com/pudo/dataset)
+* [Ansible]（https://github.com/ansible/ansible） - 极其简单的IT自动化平台。 --推荐
+* [Cloud-Init]（http://cloudinit.readthedocs.io/en/latest/） - 处理云实例的早期初始化的多分发包。
+* [cuisine]（https://github.com/sebastien/cuisine） - 为 Fabric 提供一系列高级函数。
+* [Docker Compose]（https://github.com/docker/compose） - 使用[Docker]（https://www.docker.com/）的快速隔离开发环境。 --推荐
+* [Fabric]（https://github.com/fabric/fabric/） - 简单的Pythonic远程执行和部署工具。 --推荐
+* [Fabtools]（https://github.com/fabtools/fabtools） - 编写真棒Fabric文件的工具。
+* [honcho]（https://github.com/nickstenning/honcho） - 一个[Foreman]的Python克隆（https://github.com/ddollar/foreman），用于管理基于Procfile的应用程序。
+* [nova]（https://github.com/openstack/nova） - OpenStack计算。 --推荐
+* [swift]（https://github.com/openstack/swift） - OpenStack存储。 --推荐
+* [pexpect]（https://github.com/pexpect/pexpect） - 在像GNU expect这样的伪终端中控制交互式程序。 --强烈推荐
+* [psutil]（https://github.com/giampaolo/psutil） - 跨平台的进行和系统实用程序模块。 --推荐
+* [SaltStack]（https://github.com/saltstack/salt） - 基础设施自动化和管理系统。 --推荐
+* [supervisor]（https://github.com/Supervisor/supervisor） - 用于UNIX的Supervisor进程控制系统。
+*   gitapi：Git 的纯 Python API。[官网](https://bitbucket.org/haard/gitapi)
+*   hgapi：Mercurial 的纯 Python API。[官网](https://bitbucket.org/haard/hgapi)
+*   honcho：[Foreman](https://github.com/ddollar/foreman) 的 Python 克隆版，用来管理基于 [Procfile](https://devcenter.heroku.com/articles/procfile) 的应用。[官网](https://github.com/nickstenning/honcho)
 
 
-## 包管理
-
-管理包和依赖的工具。
-
-
- * pip：Python 包和依赖关系管理工具。[链接](https://pypi.python.org/pypi)
-
- * pip-tools：保证 Python 包依赖关系更新的一组工具。[链接]https://github.com/jazzband/pip-tools)
-
- * conda：跨平台，Python 二进制包管理工具。[链接](https://github.com/conda/conda/)
-
- * Curdling：管理 Python 包的命令行工具。[链接](https://github.com/clarete/curdling)
-
- * wheel：Python 分发的新标准，意在取代 eggs。[链接](https://github.com/meshy/pythonwheels)
-
-
-## 包仓库
-
-本地 PyPI 仓库服务和代理。
-
- * warehouse：下一代 PyPI。[链接](https://github.com/pypa/warehouse)
-
- * Warehouse：[链接](https://pypi.org/)
-
- * bandersnatch：PyPA 提供的 PyPI 镜像工具。[链接](https://bitbucket.org/pypa/bandersnatch)
-
- * devpi：PyPI 服务和打包/测试/分发工具。[链接](https://github.com/devpi/devpi/)
-
- * localshop：本地 PyPI 服务(自定义包并且自动对 PyPI 镜像)。[链接](https://github.com/mvantellingen/localshop)
-
-
-## 分发
+## 分发(Distribution)
 
 打包为可执行文件以便分发。
 
- * PyInstaller：将 Python 程序转换成独立的执行文件(跨平台)。[链接](https://github.com/pyinstaller/pyinstaller)
+ * PyInstaller：将 Python 程序转换成独立的执行文件(跨平台)。[链接](https://github.com/pyinstaller/pyinstaller) --推荐
 
  * dh-virtualenv：构建并将 virtualenv 虚拟环境作为Debian 包来发布。[链接](https://github.com/spotify/dh-virtualenv)
 
- * Nuitka：将脚本、模块、包编译成可执行文件或扩展模块。[链接](http://nuitka.net/)
+ * Nuitka：将脚本、模块、包编译成可执行文件或扩展模块。[链接](https://github.com/kayhayen/Nuitka)
 
- * py2app：将 Python 脚本变为独立软件包(Mac OS X)。[链接](https://bitbucket.org/ronaldoussoren/py2app)
+ * py2app：将 Python 脚本变为独立软件包(Mac OS X)。[链接](https://bitbucket.org/ronaldoussoren/py2app) --推荐
 
  * py2exe：将 Python 脚本变为独立软件包(Windows)。[链接](https://sourceforge.net/projects/py2exe/files/py2exe/0.6.9/) --已经比较久没有更新了。
 
  * pynsist：用来创建 Windows 安装程序的工具，可以在安装程序中打包 Python本身。[链接](https://github.com/takluyver/pynsist/blob/master/doc/index.rst)
-
-
-
+ 
 ## 文档(Documentation)
 
 用以生成项目文档的库。
@@ -1052,7 +968,8 @@ Caffe - 一个快速开放的深度学习框架..
     
  * Pycco：文学编程风格的文档生成器。[链接](https://github.com/pycco-docs/pycco)
     
- * readthedocs：一个基于 Sphinx/MkDocs 的在线文档托管系统，对开源项目免费开放使用。[链接](https://github.com/rtfd/readthedocs.org/) -- 推荐
+ * readthedocs：一个基于 Sphinx/MkDocs 的在线文档托管系统，对开源项目免费开放使用。[链接](https://github.com/rtfd/readthedocs.org/) -- 推荐 
+
 
 ## 下载器(Downloader)
 
@@ -1091,6 +1008,7 @@ Caffe - 一个快速开放的深度学习框架..
  * 雪峰磁针石说明:
 
 python-currencies因为星级较少没有收录
+
 
 ## 编辑器插件(Editor Plugins and IDEs)
 
@@ -1218,6 +1136,256 @@ Python版本和环境管理
 
  * Toolz：一组用于迭代器，函数和字典的函数式编程工具。[链接](https://github.com/pytoolz/toolz) 
  
+##动态消息
+
+用来创建用户活动的库。
+
+ * django-activity-stream：从你的站点行为中生成通用活动信息流。[链接](https://github.com/justquick/django-activity-stream)
+
+ * Stream-Framework：使用 Cassandra 和 Redis 创建动态消息和通知系统。[链接](https://github.com/tschellenbach/Stream-Framework)
+
+## 图形用户界面(GUI)
+
+
+ * curses：内置的ncurses 封装，用来创建终端图形用户界面。标准库。[链接](https://docs.python.org/3/library/curses.html) 
+ * Eel - 用于制作简单电子类离线HTML / JS GUI应用程序的小程序库。[链接](https://github.com/ChrisKnott/Eel) 
+ * enaml：使用类似 QML 的 Declaratic 语法来创建美观的用户界面。[链接](https://github.com/nucleic/enaml)
+ * kivy：创建NUI应用程序的库，可以运行在 Windows, Linux, Mac OS X, Android 以及 iOS 平台上。[链接](https://github.com/kivy/kivy) -推荐
+ * pyglet：Python 的跨平台窗口及多媒体库。[链接](https://bitbucket.org/pyglet/)
+ * PyQt：跨平台用户界面框架 Qt 的 Python 绑定 ，支持 Qt v4 和 Qt v5。[链接](https://riverbankcomputing.com/software/pyqt/intro)
+ * PySide：跨平台用户界面框架 Qt 的 Python 绑定 ，支持 Qt v4。[链接](https://wiki.qt.io/PySide)
+ * Tkinter：Python GUI 标准库。[链接](https://wiki.python.org/moin/TkInter)
+ * Toga：Python 原生的, 操作系统原生的 GUI 工具包。[链接](https://github.com/pybee/toga)
+ * urwid：创建终端 GUI 应用的库，支持组件，事件和丰富的色彩等。[链接](https://github.com/urwid/urwid)
+ * wxPython：wxPython 是 wxWidgets C++ 类库和 Python 语言混合的产物。[链接](https://github.com/wxWidgets/Phoenix/)
+ * PyGObject：GLib/GObject/GIO/GTK+ (GTK+3) 的 Python 绑定。[链接](https://wiki.gnome.org/Projects/PyGObject)
+ * Flexx：纯 Python编写的用来创建 GUI 程序的工具集，它使用 web 技术进行界面的展示。[链接](https://github.com/flexxui/flexx) 
+
+##游戏开发(Game Development)
+
+
+* [Cocos2d]（https://github.com/los-cocos/cocos） - cocos2d是用于构建2D游戏，演示和其他图形/交互式应用程序的框架。它基于pyglet。
+* [Panda3D]（https://www.panda3d.org/） - 由迪士尼开发并由卡内基梅隆娱乐技术中心维护的3D游戏引擎。用C ++编写，完全用Python包装。 -推荐
+* [Pygame]（http://www.pygame.org/news.html） - Pygame是一套用于编写游戏的Python模块。  -推荐
+* [PyOgre]（http://www.ogre3d.org/tikiwiki/PyOgre） - Ogre 3D渲染引擎的Python绑定，可用于游戏，模拟，任何3D。
+* [PyOpenGL]（http://pyopengl.sourceforge.net/） - 用于OpenGL的Python ctypes绑定及其相关的API。
+* [PySDL2]（http://pysdl2.readthedocs.io/en/rel_0_9_5/） - SDL2库的基于ctypes的包装器。
+* [RenPy]（https://github.com/renpy/renpy） - Visual Novel引擎。
+
+##地理位置(Geolocation)
+
+*地理编码地址和纬度和经度的图书馆。*
+
+* [django-countries]（https://github.com/SmileyChris/django-countries） - Django应用程序，提供与表单一起使用的国家选项，标志图标静态文件和模型的国家/地区字段。
+* [GeoDjango]（https://docs.djangoproject.com/en/dev/ref/contrib/gis/） - 世界级的地理网络框架。  -推荐
+* [GeoIP]（https://github.com/maxmind/geoip-api-python） - MaxMind GeoIP遗留数据库的Python API。
+* [geojson]（https://github.com/frewsxcv/python-geojson） - GeoJSON的Python绑定和实用程序。
+* [geopy]（https://github.com/geopy/geopy） - Python地理编码工具箱。
+* [pygeoip]（https://github.com/appliedsec/pygeoip） - 纯Python GeoIP API。
+
+## HTML操作(HTML Manipulation)
+
+*用于处理HTML和XML的库。*
+
+* [BeautifulSoup]（https://www.crummy.com/software/BeautifulSoup/bs4/doc/） - Python风格的方式来对HTML或XML进行迭代，搜索和修改。 -推荐
+* [bleach]（https://github.com/mozilla/bleach） - 基于白名单的HTML清理和文本链接库。
+* [cssutils]（https://pypi.python.org/pypi/cssutils/） - Python的CSS库。
+* [html5lib]（https://github.com/html5lib/html5lib-python） - 用于解析和序列化HTML文档和片段的符合标准的库。
+* [lxml]（http://lxml.de/） - 用于处理HTML和XML的非常快速，易于使用和多功能的库。  -推荐
+* [MarkupSafe]（https://github.com/pallets/markupsafe） - 为Python实现XML / HTML / XHTML标记安全字符串。
+* [pyquery]（https://github.com/gawel/pyquery） - 用于解析HTML的jQuery类库。
+* [untangle]（https://github.com/stchris/untangle） - 将XML文档转换为Python对象以便于访问。
+* [WeasyPrint]（https://github.com/Kozea/WeasyPrint） - 可导出为PDF的HTML和CSS可视化呈现引擎。
+* [xmldataset]（https://xmldataset.readthedocs.io/en/latest/） - 简单的XML解析。
+*   xhtml2pdf：HTML/CSS 转 PDF 工具。[官网](https://github.com/xhtml2pdf/xhtml2pdf)
+* [xmltodict]（https://github.com/martinblech/xmltodict） - 像处理 JSON 一样处理 XML。
+
+## HTTP
+
+使用 HTTP 的库。
+*   aiohttp：基于 asyncio 的异步 HTTP 网络库。[官网](https://github.com/aio-libs/aiohttp)
+*   requests：人性化的 HTTP 请求库。[官网](http://docs.python-requests.org/en/latest/) --强烈推荐
+*   grequests：requests 库 + gevent ，用于异步 HTTP 请求.[官网](https://github.com/kennethreitz/grequests)
+*   httplib2：全面的 HTTP 客户端库。[官网](https://github.com/jcgregorio/httplib2)
+*   treq：类似 requests 的 Python API 构建于 Twisted HTTP 客户端之上。[官网](https://github.com/twisted/treq)
+*   urllib3：一个具有线程安全连接池，支持文件 post，清晰友好的 HTTP 库。[官网](https://github.com/shazow/urllib3)
+
+## 硬件(Hardware)
+
+*用于硬件编程的库。*
+
+* [ino]（http://inotool.org/） - 用于[Arduino]（https://www.arduino.cc/）的命令行工具包。
+* [keyboard]（https://github.com/boppreh/keyboard） - 钩和模拟Windows和Linux上的全球键盘事件。
+* [鼠标]（https://github.com/boppreh/mouse） - 在Windows和Linux上挂钩并模拟全局鼠标事件。
+* [Pingo]（https://github.com/pingo-io/pingo-py） - Pingo提供统一的API来编程像Raspberry Pi，pcDuino，Intel Galileo等设备。
+* [PyUserInput]（https://github.com/SavinaRoja/PyUserInput） - 用于跨平台控制鼠标和键盘的模块。
+* [scapy]（https://github.com/secdev/scapy） - 出色的数据包操作库。
+* [wifi]（https://github.com/rockymeza/wifi） - 用于在Linux上使用WiFi的Python库和命令行工具。
+*   Pyro：Python 机器人编程库。[官网](http://pyrorobotics.com/)
+*   PyUserInput：跨平台的，控制鼠标和键盘的模块。[官网](https://github.com/SavinaRoja/PyUserInput)
+
+
+## 图像处理(Image Processing)
+
+*用于处理图像的库。*
+
+
+*   [pillow](http://hao.jobbole.com/pillow/)：Pillow 是一个更加易用版的 [PIL](http://www.pythonware.com/products/pil/)。[官网](http://pillow.readthedocs.org/en/latest/) -推荐
+*   hmap：图像直方图映射。[官网](https://github.com/rossgoodwin/hmap)
+*   imgSeek：使用视觉相似性搜索一组图片集合的项目。[官网](https://sourceforge.net/projects/imgseek/) 较长时间没有更新
+*   nude.py：裸体检测。[官网](https://github.com/hhatto/nude.py)
+*   pyBarcode：不借助 PIL 库在 Python 程序中生成条形码。[官网](https://pythonhosted.org/pyBarcode/)
+*   pygram：类似 Instagram 的图像滤镜。[官网](https://github.com/ajkumar25/pygram)
+*   python-qrcode：纯 Python 实现的二维码生成器。[官网](https://github.com/lincolnloop/python-qrcode) --推荐
+*   Quads：基于四叉树的计算机艺术。[官网](https://github.com/fogleman/Quads)
+*   scikit-image：一个用于（科学）图像处理的 Python 库。[官网](http://scikit-image.org/) --推荐
+*   thumbor：小型图像服务，具有剪裁，尺寸重设和翻转功能。[官网](https://github.com/thumbor/thumbor) --推荐
+*   wand：[MagickWand](http://www.imagemagick.org/script/magick-wand.php)的 Python 绑定。MagickWand 是 ImageMagick 的 C API 。[官网](https://github.com/dahlia/wand)
+*   face_recognition：简单易用的 python 人脸识别库。[官网](https://github.com/ageitgey/face_recognition)
+*  [pagan]（https://github.com/daboth/pagan） - 基于输入字符串和散列的复古identicon（阿凡达）生成。
+
+## 实现(Implementations)
+
+* Python的实现。*
+
+* [CLPython]（https://github.com/metawilm/cl-python） - 实现用Common Lisp编写的Python编程语言。
+* [CPython]（https://github.com/python/cpython） - **用C编写的Python编程语言的默认，最广泛使用的实现。**
+* [Cython]（http://cython.org/） - 优化Python的静态编译器。使用类型mixin将Python编译为C或C ++模块，从而获得巨大的性能提升
+* [脾气暴躁]（https://github.com/google/grumpy） - 更多的编译器比解释器更强大的CPython2.7替换（alpha）。
+* [IronPython]（https://github.com/IronLanguages/ironpython3） - 实现用C＃编写的面向.NET Framework和Mono的Python编程语言。
+* [Jython]（https://hg.python.org/jython） - 为Java虚拟机（JVM）实现用Java编写的Python编程语言。
+* [MicroPython]（https://github.com/micropython/micropython） - MicroPython - 精简高效的Python编程语言实现，用于微控制器和受限制的系统
+* [Numba]（http://numba.pydata.org/） - 针对科学Python的LLVM的Python JIT编译器。
+* [PeachPy]（https://github.com/Maratyszcza/PeachPy） - 嵌入在Python中的x86-64汇编程序。可以用作Python的内联汇编程序，也可以用作Windows，Linux，OS X，Native Client和Go的独立汇编程序。
+* [Pyjion]（https://github.com/Microsoft/Pyjion） - 基于CoreCLR的Python JIT。
+* [PyPy]（https://bitbucket.org/pypy/pypy） - 实现用RPython编写并编译为C的Python编程语言.PyPy关注速度，效率以及与原始CPython解释器的兼容性。解释器使用黑魔法使Python非常快速，而无需添加额外的类型信息。
+* [PySec]（https://github.com/ebranca/owasp-pysec） - python的强化版本，使安全专业人员和开发人员可以更轻松地编写应用程序，从而更有弹性地处理攻击和操作。
+* [Pyston]（https://github.com/dropbox/pyston） - 使用LLVM和现代JIT技术构建的Python实现，其目标是实现良好的性能。
+* [Stackless Python]（https://bitbucket.org/stackless-dev/stackless/wiki/Home） - Python编程语言的增强版本，它允许程序员在没有性能和复杂性的情况下获得基于线程编程的好处与传统线程相关的问题。
+
+##互动翻译
+
+*交互式Python解释器（REPL）。*
+
+* [bpython]（https://github.com/bpython/bpython） - Python解释器的一个奇妙界面。
+* [Jupyter Notebook（IPython）]（https://jupyter.org） - 一个丰富的工具包，可帮助您充分利用交互式Python。
+* [ptpython]（https://github.com/jonathanslenders/ptpython） - 在[python-prompt-toolkit]之上构建的高级Python REPL（https://github.com/jonathanslenders/python-prompt-toolkit） 。
+
+##国际化
+
+*与i18n合作的图书馆*
+
+* [Babel]（http://babel.pocoo.org/en/latest/） - 一个Python国际化库。
+* [PyICU]（https://github.com/ovalhub/pyicu） - Unicode C ++库的国际组件封装（[ICU]（http://site.icu-project.org/））。
+
+## Job Scheduler
+
+*用于调度作业的库。*
+
+* [APScheduler]（http://apscheduler.readthedocs.io/en/latest/） - 轻量但功能强大的进程内任务调度程序，可让您安排功能。
+* [django-schedule]（https://github.com/thauber/django-schedule） - Django的日历应用程序。
+* [doit]（http://pydoit.org/） - 一个任务运行者和构建工具。
+* [gunnery]（https://github.com/gunnery/gunnery） - 具有基于Web界面的分布式系统的多用途任务执行工具。
+* [Joblib]（http://pythonhosted.org/joblib/index.html） - 一组用Python提供轻量级流水线的工具。
+* [计划]（https://github.com/fengsp/plan） - 用Python编写crontab文件就像一个魅力一样。
+* [schedule]（https://github.com/dbader/schedule） - 为人类进行Python作业调度。
+* [Spiff]（https://github.com/knipknap/SpiffWorkflow） - 以纯Python实现的强大的工作流引擎。
+* [TaskFlow]（https://docs.openstack.org/developer/taskflow/） - 一个Python库，可帮助您轻松，一致和可靠地执行任务。
+
+##记录
+
+*用于生成和处理日志的库。*
+
+* [Eliot]（https://github.com/ScatterHQ/eliot） - 记录复杂和分布式系统。
+* [日志]（http://logbook.readthedocs.io/en/stable/） - 记录Python的替代品。
+* [日志记录]（https://docs.python.org/2/library/logging.html） - （Python标准库）Python的日志工具。
+* [raven]（https://github.com/getsentry/raven-python） - Sentry的Python客户端，用于Web应用程序的日志/错误跟踪，崩溃报告和聚合平台。
+
+##机器学习
+
+*机器学习库。请参阅：[awesome-machine-learning]（https://github.com/josephmisiti/awesome-machine-learning#python）。*
+
+
+## ORM
+
+实现对象关系映射或数据映射技术的库。
+
+### 关系型数据库
+
+ * Django Models：Django 的一部分。[链接](https://docs.djangoproject.com/en/dev/topics/db/models/)
+
+ * SQLAlchemy：Python SQL 工具以及对象关系映射工具。[链接](http://www.sqlalchemy.org/)
+
+ * awesome-sqlalchemy系列 [链接](https://github.com/justquick/django-activity-stream)
+
+ * Peewee：一个小巧，富有表达力的 ORM, 支持postgresql, mysql and sqlite。[链接]https://github.com/coleifer/peewee)
+
+ * PonyORM：提供面向生成器的 SQL 接口的 ORM。[链接](https://github.com/ponyorm/pony/)
+
+ * python-sql：编写 Python 风格的 SQL 查询。[链接](http://python-sql.tryton.org/)
+
+### NoSQL 数据库
+
+ * django-mongodb-engine：Django MongoDB 后端。[链接](https://github.com/django-nonrel/mongodb-engine)
+
+ * PynamoDB：Amazon DynamoDB 的一个 Python 风格接口。[链接](https://aws.amazon.com/cn/dynamodb/)
+
+ * flywheel：Amazon DynamoDB 的对象映射工具。[链接](https://github.com/stevearc/flywheel)
+
+ * MongoEngine：Python 对象文档映射工具，用于 MongoDB。[链接](https://github.com/MongoEngine/mongoengine)
+
+ * hot-redis：为 Redis 提供 Python 丰富的数据类型。[链接](https://github.com/stephenmcd/hot-redis)
+
+ * redisco：一个 Python 库，提供可以持续存在在 Redis 中的简单模型和容器。[链接](https://github.com/kiddouk/redisco)
+
+### 其他
+
+ * butterdb：Google Drive 电子表格的 Python ORM。[链接](https://github.com/terrible-ideas/butterdb)
+
+ * dataset ：基于JSON的数据库。[链接](https://github.com/pudo/dataset)
+
+
+## 包管理
+
+管理包和依赖的工具。
+
+
+ * pip：Python 包和依赖关系管理工具。[链接](https://pypi.python.org/pypi)
+
+ * pip-tools：保证 Python 包依赖关系更新的一组工具。[链接]https://github.com/jazzband/pip-tools)
+
+ * conda：跨平台，Python 二进制包管理工具。[链接](https://github.com/conda/conda/)
+
+ * Curdling：管理 Python 包的命令行工具。[链接](https://github.com/clarete/curdling)
+
+ * wheel：Python 分发的新标准，意在取代 eggs。[链接](https://github.com/meshy/pythonwheels)
+
+
+## 包仓库
+
+本地 PyPI 仓库服务和代理。
+
+ * warehouse：下一代 PyPI。[链接](https://github.com/pypa/warehouse)
+
+ * Warehouse：[链接](https://pypi.org/)
+
+ * bandersnatch：PyPA 提供的 PyPI 镜像工具。[链接](https://bitbucket.org/pypa/bandersnatch)
+
+ * devpi：PyPI 服务和打包/测试/分发工具。[链接](https://github.com/devpi/devpi/)
+
+ * localshop：本地 PyPI 服务(自定义包并且自动对 PyPI 镜像)。[链接](https://github.com/mvantellingen/localshop)
+
+
+
+
+
+
+
+ 
+
+
+
+ 
 ## 包管理(Package Management)
 
 管理包和依赖
@@ -1303,7 +1471,7 @@ Python版本和环境管理
  
  
  
-＃ 科学(Science)
+## 科学(Science)
 
 
 * [astropy](http://www.astropy.org/) - 用于天文学的社区Python库。
