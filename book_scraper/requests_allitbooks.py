@@ -13,24 +13,34 @@ import os
 
 import requests
 
-def find_address(url, keys):
+def find_address(url, key, type_=False):
     print(url)
+    keys = key.lower().split()
     result = requests.get(url)
     books = re.findall(r'href="(.*?)" rel="bookmark', result.text)
     #print(set(books))
     valids = []
     for item in set(books):
-        flag = False
-        for key in keys:
-            if key in item:
-                flag = True
-                break
+        if type_:
+            flag = True        
+        else:
+            flag = False
+            for key_ in keys:
+                if key_ in item:
+                    flag = True
+                    break
         if flag:
             valids.append(item)  
     #print(valids)
     return valids
 
-def find_addresses(url, keys):
+def find_addresses(key, type_=False):
+    if type_:
+        url = "{}{}".format(r"http://www.allitebooks.com/", key)  
+    else:
+        keys = key.lower().split()
+        url = "{}{}".format(r"http://www.allitebooks.com/?s=", "+".join(keys)) 
+    print(url)
     result = requests.get(url)
     page_num = re.search(r'/\s+(\d+)\s+Pages', result.text)
     urls =[url,]
@@ -40,11 +50,11 @@ def find_addresses(url, keys):
         # http://www.allitebooks.com/?s=testing
         # http://www.allitebooks.com/page/2/?s=testing
         for i in range(2, page_num + 1):
-            urls.append(url.replace('?', '/page/{}/?'.format(i)))
+            urls.append(url.replace('com/', 'com/page/{}/'.format(i)))
         
     addresses = []
     for address in urls:
-        result = find_address(address, keys)
+        result = find_address(address, key, type_)
         if result:
             addresses =  addresses + result
         else:
@@ -57,18 +67,16 @@ parser.add_argument('keys', action="store", help=u'要查询的关键字，以�
 parser.add_argument('-d', action="store_true", default=False, help=u'是否下载')
 parser.add_argument('-o', action="store", dest="o",
                     default="/home/andrew/code/tmp_books", help=u'输出目录')
+parser.add_argument('-c', action="store_true", default=False, help=u'按类别下载')
 parser.add_argument('-y', action="store", dest="year",
                     default=2013, help=u'输出目录')
 parser.add_argument('--version', action='version',
                     version='%(prog)s 1.1 Rongzhong xu 2018 03 19')
 
 options = parser.parse_args()
-keys = options.keys.lower().split()
 print(options.d)
 
-url = "{}{}".format(r"http://www.allitebooks.com/?s=", "+".join(keys))
-print(url)
-valids = find_addresses(url, keys)
+valids = find_addresses(options.keys, options.c)
 print(valids)        
 
 actuals = []
