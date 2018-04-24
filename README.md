@@ -244,6 +244,9 @@ autopy、WATSUP、winGuiAuto因为较长时间未更新未收录
 
 ## 测试框架
 
+ * [pyresttest](https://github.com/svanoort/pyresttest) 接口测试框架 -- 推荐 
+ 
+ * [augmented-traffic-control](https://github.com/facebook/augmented-traffic-control) facebook开发的最强悍弱网网络模拟工具 --强烈推荐
 
  * Hypothesis - 高级单元测试测试框架，支持行为驱动，基于property 。 [链接](https://github.com/HypothesisWorks/hypothesis-python) -- 推荐 
 
