@@ -2,9 +2,9 @@
 
 flask/api_demo: 使用python3和flask构建RESTful API(接口测试服务) 的源码 [文档地址](http://t.cn/RQzD0uY)
 
-book_scraper：一些爬取书籍的脚本。如果你知道有更好的免费书籍下载站点或下载脚本，请联系xurongzhong#126.com，谢谢
+book_scraper：一些爬取书籍的脚本。如果你知道有更好的免费书籍下载站点或下载脚本，请联系xurongzhong#126.com，谢谢 [文档地址](http://t.cn/RQzD0uY)
 
-book_scraper/requests_allitbooks.py 根据搜索词下载allitbooks的书籍，[文档](http://blog.sciencenet.cn/home.php?mod=space&uid=2604609&do=blog&id=1104696)
+book_scraper/requests_allitbooks.py 根据搜索词下载allitbooks的书籍，[文档](http://blog.sciencenet.cn/blog-2604609-1104696.html)
 
 wingide6 破解：other/wingide6_python3_crack.py
 
@@ -245,6 +245,8 @@ autopy、WATSUP、winGuiAuto因为较长时间未更新未收录
 ## 测试框架
 
  * [pyresttest](https://github.com/svanoort/pyresttest) 接口测试框架 -- 推荐 
+ 
+  * [HttpRunner](https://github.com/HttpRunner/HttpRunner) HTTP接口测试框架 -- 推荐 
  
  * [augmented-traffic-control](https://github.com/facebook/augmented-traffic-control) facebook开发的最强悍弱网网络模拟工具 --强烈推荐
 
@@ -740,6 +742,9 @@ django-viewlet因为github星级太少而未收录
  * Pandas：提供高性能，易用的数据结构和数据分析工具。[链接](https://github.com/pandas-dev/pandas) --强烈推荐
 
  * 书籍：利用Python进行数据分析 2017 第二版 代码 [链接](https://github.com/wesm/pydata-book)  --推荐
+ 
+ * [利用Python进行数据分析·第2版](https://www.jianshu.com/p/ac7bec000dad) --推荐
+ 
 
 ## 数据验证(Data Validation)
 

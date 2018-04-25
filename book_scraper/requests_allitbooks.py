@@ -10,6 +10,9 @@ import argparse
 import re
 import shutil
 import os
+import time
+import random
+import traceback
 
 import requests
 
@@ -81,7 +84,21 @@ print(valids)
 
 actuals = []
 for file_link in valids:
-    result = requests.get(file_link)
+    attempts = 0   
+    result = False
+    while attempts < 3:    
+        try:
+            result = requests.get(file_link,timeout=10)
+            result = True
+        except Exception as info:
+            time.sleep(random.randint(1,5))
+            attempts += 1
+            print('Error: {}'.format(file_link))
+            print(info)
+            traceback.print_exc()
+    
+    if not result:
+        continue
     year_search = re.search(r'Year.*?(\d+)<', result.text)
     year = year_search.group(1) if year_search else '1900'
     link_search = re.search('ref="(.*?)" target="_blank"', result.text)
@@ -96,8 +113,7 @@ for file_link in valids:
         continue
     
     name = '-{}.'.format(year).join(link.split('/')[-1].split('.'))
-    filename = "{}{}{}".format(options.o, os.sep, name) if options.o else name
-    print(filename)	
+    filename = "{}{}{}".format(options.o, os.sep, name) if options.o else name	
     url = link.replace(" ","%20")
     actuals.append("* [{0}]({1})".format(name, url))
     
