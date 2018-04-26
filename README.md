@@ -660,7 +660,7 @@ django-viewlet因为github星级太少而未收录
 
  * pyocr：Tesseract 和 Cuneiform 的包装库。[链接](https://github.com/openpaperwork/pyocr) 
 
- * pytesseract：Google Tesseract OCR 的另一包装库。[链接](https://github.com/madmaze/pytesseract) 
+ * pytesseract：Google Tesseract OCR 的另一包装库。[链接](https://github.com/madmaze/pytesseract) [文档](https://xurongzhong.github.io/python3_lib_pytesseract.html)
 
  * SimpleCV：一个用来创建计算机视觉应用的开源框架。[链接](https://github.com/sightmachine/SimpleCV) 
 
