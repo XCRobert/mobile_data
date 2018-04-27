@@ -229,7 +229,6 @@ def get_filelistandlabel(src, real, filetype="ir",file_name='output/files.txt',
         files = concat_list(files, files2, sep=' ')
     labels = get_labels(files, real)      
     output_file(file_name, files)
-    output_file('output/files.txt', files)
     output_file(label_name, labels)
         
 

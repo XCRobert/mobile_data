@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
-# Author:    xurongzhong#126.com 技术支持qq群：6089740
+# Author:    xurongzhong#126.com 
 # CreateDate: 2018-3-27
 # pillow_rotate.py
 import glob
