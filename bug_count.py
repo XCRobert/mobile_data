@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-# Author:    xurongzhong@sensetime.com wechat:pythontesting qq:37391319
+# Author:    xurongzhong@126.com wechat:pythontesting qq:37391319
 # CreateDate: 2018-1-30
 
 '''
