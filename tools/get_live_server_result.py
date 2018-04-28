@@ -20,6 +20,8 @@ parser.add_argument('files', action="store", help=u'测试图片列表文件')
 parser.add_argument('scores', action="store", help=u'服务器liveness结果')
 parser.add_argument('-s', action="store", dest="score", default=0.7, type=float,
                     help=u'分数的门限')
+parser.add_argument('-r', action="store_true", default=False, 
+                    help=u' 是否用中文用例名字替换数字。')
 parser.add_argument('-o', action="store", dest="output",
                     default="live_result.xlsx", help=u'结果输出目录') 
 parser.add_argument('--version', action='version',
@@ -48,7 +50,7 @@ def rename(name):
     replace = '/home/andrew/code/data/tof/base_test_data/vivo-liveness/'
     type_ = os.path.dirname(name.replace(replace,"").split()[-1])
     last = type_.split('/')[-1]
-    if last in cases:
+    if last in cases and options.r:
         type_ = type_.replace(last,cases[last])
     return type_
 

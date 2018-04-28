@@ -10,6 +10,7 @@ import time
 import pandas as pd
 
 import servers
+import data_common
 
 '''
 调用示例：
@@ -59,6 +60,7 @@ if __name__ == '__main__':
         print(time.ctime())
         row = df.loc[person]
         row.index = [real_photos['person'], real_photos['filename']]
+        print(row)
         self_list = row[person]
         selfs_num = selfs_num + len(self_list)
         self_ = self_list[(self_list<=0.9) & (self_list>-1)]
