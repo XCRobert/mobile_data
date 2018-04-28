@@ -197,3 +197,41 @@ def get_liveness_server_result(scores, files, labels, score=0.7,
         "real_num","frr_num", "photo_num", "far_num","unknow","unknow_rate"]) 
     df4.to_excel(writer, sheet_name='FAR_FRR', index=False)
     writer.save()
+    
+    
+def get_gaze_server_result(scores, files, labels, score=0.5,
+        error_name="gaze_error.xlsx"):
+    
+    values = []    
+    for i in range(18):
+        values.append(i*0.05+0.1)    
+
+    df_score = pd.read_csv(scores, header=None, names=['score'])
+    df_file = pd.read_csv(files, header=None, names=['filename'])
+    df_label = pd.read_csv(labels, header=None, names=['label'])
+    
+    df = pd.concat([df_label, df_score, df_file], axis=1)
+    
+    df1 = df.loc[(df['score'] < score) & df['filename'].str.contains('/gaze/')]
+    df2 = df.loc[(df['score'] > score) & df['filename'].str.contains('/no_gaze/')]
+    
+    writer = pd.ExcelWriter(error_name)
+    df1.to_excel(writer, sheet_name='注视识别为非注视', index=False)
+    df2.to_excel(writer, sheet_name='非注视识别为注视', index=False)
+
+
+    
+    results = []
+    for value in values:
+        result = get_gaze_frr_far(df, 'score', value)
+        results.append([value, *result])
+    
+    df4 = pd.DataFrame(
+        results, 
+        columns=["Threshold","FAR", "FRR", "number","real_number", "frr_number",
+                 "no_number", "far_number","unknow","unknow_rate"])
+    
+    df4.to_excel(writer, sheet_name='FAR_FRR', index=False)
+    writer.save()
+
+    

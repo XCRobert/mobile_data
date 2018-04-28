@@ -159,8 +159,12 @@ if options.test_type == 'liveness':
 if options.test_type == 'gaze':
     fprs = [0.3,0.25,0.2,0.15,0.1,0.05,0.02,0.01,0.001]
     roc = "{0}{1}{2}-roc.txt".format(directory, os.sep, version)
-    count.roc(result, label_name, fprs=fprs, output=roc, )    
+    count.roc(result, label_name, fprs=fprs, output=roc, ) 
+    error_name = "{0}{1}{2}-result.xlsx".format(directory, os.sep, version)
+    servers.get_gaze_server_result(new_result, file_name, label_name, 
+        error_name=error_name)    
 
 
 
     
+
