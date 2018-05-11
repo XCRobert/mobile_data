@@ -32,6 +32,8 @@ tools目录：
 
 [python、软件测试等海量书籍](books.md)
 
+[接口自动化性能测试线上培训大纲](https://xurongzhong.github.io/testing_training.html)
+
 Table of Contents
 =================
 
@@ -1901,6 +1903,8 @@ Archive
  * WebSocket-for-Python：为Python2/3 以及 PyPy 编写的 WebSocket 客户端和服务器库。[链接](https://github.com/Lawouach/WebSocket-for-Python) 
 
 ### 持续更新
+
+[接口自动化性能测试线上培训大纲](https://xurongzhong.github.io/testing_training.html)
 
 交流QQ群：python 测试开发自动化测试 144081101  Python数据分析pandas Excel 630011153 中医草药自学自救大数据 391441566 南方中医草药鉴别学习 184175668 中医草药湿热湿疹胃病 291184506 python高级人工智能视觉 6089740 
 
