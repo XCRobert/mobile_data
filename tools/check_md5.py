@@ -66,7 +66,9 @@ if __name__ == '__main__':
     for i in range(number):
         process[i].join()       
        
-    f = open("md5_files.txt",'w')    
+    f = open("md5_files.txt",'w')   
+    f2 = open("files.txt",'w')   
     for item in dict(results):
+        f2.write("{},{}\n".format(item,results[item]))
         if len(results[item]) > 1:
             f.write("{},{}\n".format(item,results[item]))

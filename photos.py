@@ -12,18 +12,42 @@ import numpy as np
 import face_recognition
 from PIL import Image, ImageDraw
 
-def mark_image(filename, dst, poses):
+def mark_image(filename, dst, poses, angle=None, relative=False):
     '''
     files： 文件列表
     dst： 目的文件目录
     poses: 为颜色跟对应的坐标(left, top, right,  bottom)。 
     比如{"green":(1,1,99,100)}
     '''
-    image = Image.open(filename)
-    d = ImageDraw.Draw(image, 'RGBA')
+    colors = {'blue': (255,0,0), 'green': (0,255,0), 'red': (0,0,255),}
+    image = cv2.imread(filename)
     for color in poses:
-        d.rectangle(poses[color],outline=color)   
-    image.save(dst)
+        print(poses[color])
+        left = left2 = int(poses[color][0])
+        top = top2 = int(poses[color][1])
+        right = right2 = int(poses[color][2])
+        bottom = bottom2 = int(poses[color][3])
+        
+        if relative:
+            right = left + right
+            bottom = top + bottom
+                   
+        if angle == 'left':
+            left2 = top
+            right2 = bottom
+            top2 = 480 - right
+            bottom2 = 480 - left
+            
+        if angle == 'right':
+            left2 = 640 - bottom
+            right2 = 640 - top
+            top2 = 480 - right
+            bottom2 = 480 - left        
+        
+            
+            
+        cv2.rectangle(image,(left2, top2), (right2, bottom2), colors[color], 1)
+    cv2.imwrite(dst, image)
 
 def mark_images(files, out,shenzhens, beijings):
     for filename in files:

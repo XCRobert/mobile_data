@@ -1,1 +1,0 @@
-/home/andrew/code/data/tof/bug/20180414-linlin/FaceDetect/sensetime/user_1059364187/LivenessFail/0.2018-04-14-14.31.34.555_verify_0.80_livness_1.00.raw

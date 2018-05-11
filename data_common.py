@@ -220,7 +220,6 @@ def get_filelistandlabel(src, real, filetype="ir",file_name='output/files.txt',
     types = filetype.split(",")
     if len(types)>1:
         filetype = types[0]
-    
     files = find_files_by_type(src,filetype)
     files.sort()  
     if len(types)==2:
@@ -234,6 +233,7 @@ def get_filelistandlabel(src, real, filetype="ir",file_name='output/files.txt',
 
 def find_files_by_type(src, filetype="ir"):
     p = Path(src)
+    print(str(p))
     files = []
     for file_name in p.glob('**/*.{0}'.format(filetype)):    
         files.append(str(file_name))
@@ -636,10 +636,6 @@ def get_compare_reulst(files, server_file, key, out, server_columns, output_colu
     
 
 if __name__ == '__main__':
-    list1 = file2list("/opt/test_tools/base/faceunlock_test_general_meil/output/files.txt")
-    list2 = file2list("/opt/test_tools/base/faceunlock_test_general_meil/result/live_no_files.txt")
-    l = list1 + list2
-    l.sort()
-    labels = get_labels(l, '/photo/')
-    output_file("/opt/test_tools/base/faceunlock_test_general_meil/result/live_files.txt", l)
-    output_file("/opt/test_tools/base/faceunlock_test_general_meil/result/live_label.txt", labels)
+    src = '/home/andrew/code/data/tof/vivo3D_batch_test/liveness/demo_1.7.5_test'
+    files = find_files_by_type(src)
+    print(files)

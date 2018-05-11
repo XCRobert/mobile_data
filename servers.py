@@ -122,9 +122,9 @@ def wait_until_stop(name,sep=5):
     while check_process(name):
         time.sleep(sep)
 
-def get_liveness_server_result(scores, files, labels, score=0.7,
+def get_liveness_server_result(scores, files, labels, score=0.99,
         replace='/home/andrew/code/data/tof/base_test_data/vivo-liveness/',
-        error_name="live_error.xlsx"):
+        error_name="live_error.xlsx",type_=''):
     
     cases = {
         "01": "注册",
@@ -199,7 +199,7 @@ def get_liveness_server_result(scores, files, labels, score=0.7,
     writer.save()
     
     
-def get_gaze_server_result(scores, files, labels, score=0.5,
+def get_gaze_server_result(scores, files, labels, score=0.3,
         error_name="gaze_error.xlsx"):
     
     values = []    
@@ -233,5 +233,3 @@ def get_gaze_server_result(scores, files, labels, score=0.5,
     
     df4.to_excel(writer, sheet_name='FAR_FRR', index=False)
     writer.save()
-
-    
